@@ -186,8 +186,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <PlayerNumber>k__BackingField: 0
+  <PlayerColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
+  <SpriteRenderer>k__BackingField: {fileID: 2500016798255280548}
   <Rigidbody2D>k__BackingField: {fileID: 3752404572598628836}
-  <MoveSpeed>k__BackingField: 5
+  <MoveSpeed>k__BackingField: 10
   <JumpForce>k__BackingField: 5
 --- !u!50 &3752404572598628836
 Rigidbody2D:
