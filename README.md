@@ -56,3 +56,37 @@ The project is set up so that when a new input device is registered (when a butt
 ![player prefab](.\docs\img\player prefab.png)
 
 The [PlayerController](https://github.com/MohawkRaphaelT/w26-design-week-template/blob/main/DW%20W26%20Unity/Assets/Scripts/PlayerController.cs) script manages the player prefabs. It has a few functions called by `PlayerSpawn` as the player is being spawned, such as assigning the input device, player number, and player color.
+
+### 2.3 Getting Input
+
+The newer Input System has a lot of ways to get input. I tried to provide the solution that seems most straightforward and similar enough to the legacy input manager. 
+
+First, you need to define the possible actions and tie them to types of input. You can find the asset in your Assets database or via `Edit > Player Settings > Input System Package`.
+
+![action map](.\docs\img\action map.png)
+
+Actions maps are the collections of actions for a logical unit (eg. player, UI), and each action is driven by a type of input, such as gamepad stick or keyboard button.
+
+In your scripts, you need to get the instance of `PlayerInput` from `PlayerInputManager`. You could check input indirectly without the `PlayerInput` instance but it seems to poll all controllers. How to do this is best explain by looking at the above section 2.2 and related scripts.
+
+Once you have the `PlayerInput`, you can find actions within the scheme.
+
+```C#
+// Find the references to the "Move" and "Jump" actions inside the
+// player input's action map.
+InputAction InputActionMove = playerInput.actions.FindAction("Player/Move");
+InputAction InputActionJump = playerInput.actions.FindAction("Player/Jump");
+```
+
+The type `InputAction` is an abstraction on the opposite end of the action map. The directive `/` is how you can navigate the action map in absolute terms.
+
+Once you have the `InputAction`, you can interpret it according to the configuration. For instance, you can interpret the `InputAction` as a binary input (button) or as a 2D input (stick axes).
+
+```C#
+// MOVE: Read the "Move" action value, which is a 2D vector
+Vector2 moveValue = InputActionMove.ReadValue<Vector2>();
+
+// JUMP: Read the "Jump" action state, which is a boolean value
+if (InputActionJump.WasPressedThisFrame()) { /* ... */ }
+```
+
