@@ -1,6 +1,6 @@
 # W26 Design Week Template
 
-
+This project serves as a template for this design week challenge.
 
 ## 1. Multi-Display Rendering
 
@@ -8,7 +8,7 @@ Each of the Viswall's monitors are identical. The Viswall is a 5x2 matrix of mon
 
 ![viswall](.\docs\img\viswall.png)
 
-( ! ) I will confirm these details as soon as I can confirm the dimensions. Left the resources on my work laptop, but doing this at home.
+( ! ) I will confirm these details as soon as I can confirm the dimensions.
 
 - **Aspect Ratio**:
   - 16 by 9
@@ -38,3 +38,21 @@ If the rendered windows don't start where you want, you should set things up in 
 The Viswall will be set up with a tower PC connected to 6 game controllers simultaneously (XBOX and/or PS5, though any traditional controller will do). You do not need to use all controllers for your game. However, the game must remain a multiplayer game.
 
 We encourage you to use as few buttons, triggers, and/or control stick as possible to keep button the game accessible and remove issues related to button mapping across different controllers.
+
+### 2.1 Input System
+
+This project template uses Unity's newer Input System rather than the legacy Input Manager. To boil it down, an action map is defined for the project. Each action map contains schemes (profiles) for sets of actions, eg. Player, UI. Rather than directly poll an input device for its physical buttons, the action is abstract (eg. Move, Jump) and is tied to one or more of input types (controller stick, face button). Then, in code, you can check for the action being triggered. Unity then abstracts a large number of inputs that can be tied to the action. So even though you may, for instance, use different brands of controllers, they can all "Jump" using the west face button across all traditional controllers.
+
+Input System manual: https://docs.unity3d.com/Packages/com.unity.inputsystem@1.18/manual/index.html
+
+### 2.2 Automatic Player Drop-In via Player Input Manager
+
+The project is set up so that when a new input device is registered (when a button is pressed) it spawns in a Player prefab into the scene. This is managed via Unity's `PlayerInputManager` currently on the "Player Input Manager" object in the sample scene. The script [PlayerSpawn](https://github.com/MohawkRaphaelT/w26-design-week-template/blob/main/DW%20W26%20Unity/Assets/Scripts/PlayerSpawn.cs) attached to this object is called when the [PlayerInputManager](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.18/api/UnityEngine.InputSystem.PlayerInputManager.html) registers a new input device. `PlayerSpawn`'s function `OnPlayerJoined` is "magically" called by virtue of being attached to the same game object and handles assigning the information such as the `PlayerInput` (action map / input device) to the player object. You can change the messaging method by changing the top drop-down on `PlayerInputManager`.
+
+![player input manager](.\docs\img\player input manager.png)
+
+`PlayerInputManager` can only clone one prefab set in the Inspector. If you want different roles for players, consider spawning in an object that then spawns in the correct prefab and uses the correct action map. 
+
+![player prefab](.\docs\img\player prefab.png)
+
+The [PlayerController](https://github.com/MohawkRaphaelT/w26-design-week-template/blob/main/DW%20W26%20Unity/Assets/Scripts/PlayerController.cs) script manages the player prefabs. It has a few functions called by `PlayerSpawn` as the player is being spawned, such as assigning the input device, player number, and player color.
