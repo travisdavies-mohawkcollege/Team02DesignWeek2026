@@ -45,4 +45,9 @@ public class PlayerSpawn : MonoBehaviour
         playerController.AssignColor(color);
     }
 
+    public void OnPlayerLeft(PlayerInput playerInput)
+    {
+        // Not handling anything right now.
+        Debug.Log("Player left...");
+    }
 }
