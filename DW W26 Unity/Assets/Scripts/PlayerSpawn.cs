@@ -35,11 +35,19 @@ public class PlayerSpawn : MonoBehaviour
         playerInput.transform.rotation = SpawnPoints[PlayerCount].rotation;
         Color color = PlayerColors[PlayerCount];
 
+
+
+
         // Increment player count
         PlayerCount++;
 
         // Set up player controller
         PlayerController playerController = playerInput.gameObject.GetComponent<PlayerController>();
+        //Assign Trapper
+        if (PlayerCount == 1)
+        {
+            playerController.AssignTrapperRole(true);
+        }
         playerController.AssignPlayerInputDevice(playerInput);
         playerController.AssignPlayerNumber(PlayerCount);
         playerController.AssignColor(color);
