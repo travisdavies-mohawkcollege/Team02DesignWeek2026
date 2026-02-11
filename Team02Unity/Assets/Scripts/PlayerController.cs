@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     [field: SerializeField] public Rigidbody2D Rigidbody2D { get; private set; }
     [field: SerializeField] public float MoveSpeed { get; private set; } = 10f;
     [field: SerializeField] public float JumpForce { get; private set; } = 5f;
+    [field: SerializeField] public GroundCheck groundCheckObject;
 
 
     //Trapper Variables
@@ -37,6 +38,14 @@ public class PlayerController : MonoBehaviour
     public bool grounded { get; private set; } = true;
     public Vector3 maxSize = new Vector3(2f, 2f, 2f);
     public Vector3 minSize = new Vector3(0.75f, 0.75f, 0.75f);
+
+    //Temp
+    public PitTrap pitTrapTest;
+
+    //Timers
+    public float buttonCooldown = 20f;
+    public float buttonTimer = 20f;
+    public bool buttonOnCooldown = false;
 
 
     // Assign color value on spawn from main spawner
@@ -126,6 +135,7 @@ public class PlayerController : MonoBehaviour
             case true:
                 TrapperInteract();
                 TrapperMove();
+                TrapperTimers();
                 return;
             case false:
                 RunnerJump();
@@ -141,12 +151,12 @@ public class PlayerController : MonoBehaviour
         {
             if (jumping)
             {
+                grounded = false;
                 transform.localScale += new Vector3(0.1f, 0.1f, 0.1f);
                 if (transform.localScale.x >= maxSize.x)
                 {
                     jumping = false;
                     falling = true;
-                    grounded = false;
                 }
             }
             else if (falling)
@@ -206,11 +216,22 @@ public class PlayerController : MonoBehaviour
             }
             else if (hit.collider.gameObject.CompareTag("Button"))
             {
-
-                Debug.Log("Interacted with Button");
-                Animator buttonAnim = hit.collider.GetComponent<Animator>();
-                this.SpriteRenderer.enabled = false;
-                buttonAnim.SetBool("pressingButton", true);
+                if(buttonOnCooldown)
+                {
+                    Debug.Log("Button on CD");
+                    trapperInteract = false;
+                }
+                else
+                {
+                    Debug.Log("Interacted with Button");
+                    Animator buttonAnim = hit.collider.GetComponent<Animator>();
+                    this.SpriteRenderer.enabled = false;
+                    buttonAnim.SetBool("pressingButton", true);
+                    trapperInteract = false;
+                    buttonTimer = 10f;
+                    //buttonOnCooldown = true;
+                }
+                    
             }
             else
             {
@@ -219,6 +240,45 @@ public class PlayerController : MonoBehaviour
             }
         }
         
+    }
+
+    private void TrapperTimers()
+    {
+        ButtonTimer();
+    }
+
+    private void ButtonTimer()
+    {
+        
+        if (buttonTimer <= 0)
+        {
+            buttonTimer = buttonCooldown;
+            buttonOnCooldown = false;
+        }
+        if (buttonOnCooldown)
+        {
+            buttonTimer -= Time.deltaTime;
+            Debug.Log(buttonTimer);
+        }
+    }
+
+    public void OnTriggerEnter2D(Collider2D collider)
+    {
+        Debug.Log("Collided with " + collider.gameObject);
+        Debug.Log(grounded);
+        if (collider.gameObject.CompareTag("PitTrap"))
+        {
+            if (grounded)
+            {
+                //Take Damage
+                RunnerDie();
+            }
+        }
+    }
+
+    public void RunnerDie()
+    {
+        SpriteRenderer.color = Color.white;
     }
 
     // OnValidate runs after any change in the inspector for this script.

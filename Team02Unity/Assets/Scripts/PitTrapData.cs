@@ -9,4 +9,5 @@ public struct PitTrapData
 {
     public Vector3Int[] trappedTilePos;
     public Tile trapTile;
+    public Tile trapDoor;
 }
