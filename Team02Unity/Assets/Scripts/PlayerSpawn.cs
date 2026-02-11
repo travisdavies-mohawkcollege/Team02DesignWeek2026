@@ -44,13 +44,15 @@ public class PlayerSpawn : MonoBehaviour
         // Set up player controller
         PlayerController playerController = playerInput.gameObject.GetComponent<PlayerController>();
         //Assign Trapper
+        playerController.AssignPlayerInputDevice(playerInput);
+        playerController.AssignPlayerNumber(PlayerCount);
         if (PlayerCount == 1)
         {
             playerController.AssignTrapperRole(true);
+            playerController.AssignTrapperSprite();
         }
-        playerController.AssignPlayerInputDevice(playerInput);
-        playerController.AssignPlayerNumber(PlayerCount);
-        playerController.AssignColor(color);
+        else playerController.AssignColor(color);
+
     }
 
     public void OnPlayerLeft(PlayerInput playerInput)

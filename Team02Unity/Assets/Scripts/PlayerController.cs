@@ -11,9 +11,20 @@ public class PlayerController : MonoBehaviour
     [field: SerializeField] public Rigidbody2D Rigidbody2D { get; private set; }
     [field: SerializeField] public float MoveSpeed { get; private set; } = 10f;
     [field: SerializeField] public float JumpForce { get; private set; } = 5f;
-    [field: SerializeField] public bool isTrapper { get; private set; } = false;
 
+
+    //Trapper Variables
+    [field: SerializeField] public bool isTrapper { get; private set; } = false;
+    [field: SerializeField] public Sprite sprTrapperHand { get; private set; }
+    [field: SerializeField] public int interactionRange { get; private set; } = 25;
+    public bool trapperInteract;
+    [field: SerializeField] public LayerMask trapperInteractableMask { get; private set; }
+
+
+    //Various Vexing Variables
     public bool DoJump { get; private set; }
+    public bool canControl { get; private set; }
+
 
     // Player input information
     private PlayerInput PlayerInput;
@@ -41,6 +52,12 @@ public class PlayerController : MonoBehaviour
             SpriteRenderer.color = color;
     }
 
+    public void AssignTrapperSprite()
+    {
+        SpriteRenderer.sprite = sprTrapperHand;
+
+    }
+
     // Set up player input
     public void AssignPlayerInputDevice(PlayerInput playerInput)
     {
@@ -60,7 +77,15 @@ public class PlayerController : MonoBehaviour
 
     public void AssignTrapperRole(bool isTrapper)
     {
-
+        this.isTrapper = isTrapper;
+        if (Rigidbody2D == null)
+        {
+            Debug.Log($"{name}'s {nameof(PlayerController)}.{nameof(Rigidbody2D)} is null.");
+            return;
+        }
+        Rigidbody2D.linearDamping = 2;
+        Rigidbody2D.freezeRotation = true;
+        MoveSpeed = 15f;
     }
 
     // Runs each frame
@@ -69,17 +94,22 @@ public class PlayerController : MonoBehaviour
         switch (isTrapper)
         {
             case true:
+                if (InputActionJump.WasPressedThisFrame())
+                {
+                    trapperInteract = true;
+                }
                 return;
-        }
-        
-        // Read the "Jump" action state, which is a boolean value
-        if (InputActionJump.WasPressedThisFrame())
-        {
-            // Buffer input becuase I'm controlling the Rigidbody through FixedUpdate
-            // and checking there we can miss inputs.
-            DoJump = true;
-            jumping = true;
-        }
+            case false:
+                // Read the "Jump" action state, which is a boolean value
+                if (InputActionJump.WasPressedThisFrame() && !jumping)
+                {
+                    // Buffer input becuase I'm controlling the Rigidbody through FixedUpdate
+                    // and checking there we can miss inputs.
+                    DoJump = true;
+                    jumping = true;
+                }
+                return;
+        } 
     }
 
     // Runs each phsyics update
@@ -91,23 +121,28 @@ public class PlayerController : MonoBehaviour
             return;
         }
 
-        // MOVE
-        // Read the "Move" action value, which is a 2D vector
-        Vector2 moveValue = InputActionMove.ReadValue<Vector2>();
-        // Here we're only using the X axis to move.
-        float moveForceX = moveValue.x * MoveSpeed;
-        float moveForceY = moveValue.y * MoveSpeed;
-        // Apply fraction of force each frame
-        Rigidbody2D.AddForceX(moveForceX, ForceMode2D.Force);
-        Rigidbody2D.AddForceY(moveForceY, ForceMode2D.Force);
+        switch (isTrapper)
+        {
+            case true:
+                TrapperInteract();
+                TrapperMove();
+                return;
+            case false:
+                RunnerJump();
+                RunnerMove();
+                return;
+        }  
+    }
 
+    private void RunnerJump()
+    {
         // JUMP - review Update()
         if (DoJump)
         {
             if (jumping)
             {
                 transform.localScale += new Vector3(0.1f, 0.1f, 0.1f);
-                if(transform.localScale.x >= maxSize.x)
+                if (transform.localScale.x >= maxSize.x)
                 {
                     jumping = false;
                     falling = true;
@@ -117,7 +152,7 @@ public class PlayerController : MonoBehaviour
             else if (falling)
             {
                 transform.localScale -= new Vector3(0.1f, 0.1f, 0.1f);
-                if(transform.localScale.x <= minSize.x)
+                if (transform.localScale.x <= minSize.x)
                 {
                     falling = false;
                 }
@@ -127,9 +162,63 @@ public class PlayerController : MonoBehaviour
                 DoJump = false;
                 grounded = true;
             }
-                
-            
         }
+    }
+
+    private void RunnerMove()
+    {
+        // MOVE
+        // Read the "Move" action value, which is a 2D vector
+        Vector2 moveValue = InputActionMove.ReadValue<Vector2>();
+        // Move on both axis
+        float moveForceX = moveValue.x * MoveSpeed;
+        float moveForceY = moveValue.y * MoveSpeed;
+        // Apply fraction of force each frame
+        Rigidbody2D.AddForceX(moveForceX, ForceMode2D.Force);
+        Rigidbody2D.AddForceY(moveForceY, ForceMode2D.Force);
+    }
+
+    private void TrapperMove()
+    {
+        // MOVE
+        // Read the "Move" action value, which is a 2D vector
+        Vector2 moveValue = InputActionMove.ReadValue<Vector2>();
+        // Move on both axis
+        float moveForceX = moveValue.x * MoveSpeed;
+        float moveForceY = moveValue.y * MoveSpeed;
+        // Apply fraction of force each frame
+        Rigidbody2D.AddForceX(moveForceX, ForceMode2D.Force);
+        Rigidbody2D.AddForceY(moveForceY, ForceMode2D.Force);
+    }
+
+    private void TrapperInteract()
+    {
+        
+        if (trapperInteract)
+        {
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, -Vector2.up, interactionRange, trapperInteractableMask);
+            Debug.Log("Interacted");
+            if (!hit)
+            {
+                trapperInteract = false;
+                Debug.DrawRay(this.transform.position, -Vector3.up * interactionRange, Color.red);
+                Debug.Log("hit nothing");
+            }
+            else if (hit.collider.gameObject.CompareTag("Button"))
+            {
+
+                Debug.Log("Interacted with Button");
+                Animator buttonAnim = hit.collider.GetComponent<Animator>();
+                this.SpriteRenderer.enabled = false;
+                buttonAnim.SetBool("pressingButton", true);
+            }
+            else
+            {
+                trapperInteract = false;
+                Debug.Log(hit.collider.gameObject);
+            }
+        }
+        
     }
 
     // OnValidate runs after any change in the inspector for this script.

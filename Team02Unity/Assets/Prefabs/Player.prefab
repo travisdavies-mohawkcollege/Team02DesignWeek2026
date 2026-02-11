@@ -215,6 +215,14 @@ MonoBehaviour:
   <Rigidbody2D>k__BackingField: {fileID: 3752404572598628836}
   <MoveSpeed>k__BackingField: 10
   <JumpForce>k__BackingField: 5
+  <isTrapper>k__BackingField: 0
+  <sprTrapperHand>k__BackingField: {fileID: -1156535331316730169, guid: 36c78f36a01a3c94d9d99f4cdeff7006, type: 3}
+  <interactionRange>k__BackingField: 25
+  <trapperInteractableMask>k__BackingField:
+    serializedVersion: 2
+    m_Bits: 64
+  maxSize: {x: 2, y: 2, z: 2}
+  minSize: {x: 0.75, y: 0.75, z: 0.75}
 --- !u!50 &3752404572598628836
 Rigidbody2D:
   serializedVersion: 5
