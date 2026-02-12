@@ -3,6 +3,7 @@ using System.Collections;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UIElements;
 
 public class PlayerController : MonoBehaviour
 {
@@ -25,16 +26,22 @@ public class PlayerController : MonoBehaviour
     //Various Vexing Variables
     public bool DoJump { get; private set; }
     public bool canControl = true;
+    public GameObject player2Jail, player3Jail, player4Jail, player5Jail, player6Jail;
+    public GameManager gameManager;
+
+    public PlayPointData[] player2Points, player3Points, player4Points, player5Points, player6Points;
 
     // Player input information
     private PlayerInput PlayerInput;
     private InputAction InputActionMove;
     private InputAction InputActionJump;
+    private InputAction InputActionStartGame;
 
     //Jump Test
     public bool jumping { get; private set; }
     public bool falling { get; private set; }
     public bool grounded { get; private set; } = true;
+    public bool doneRoom = false;
     public Vector3 maxSize = new Vector3(2f, 2f, 2f);
     public Vector3 minSize = new Vector3(0.75f, 0.75f, 0.75f);
 
@@ -55,6 +62,11 @@ public class PlayerController : MonoBehaviour
     public float leverTimer;
     public bool leverOnCooldown = false;
 
+    public void Start()
+    {
+        gameManager = FindFirstObjectByType<GameManager>();
+        gameManager.playerControllers.Add(this);
+    }
 
     // Assign color value on spawn from main spawner
     public void AssignColor(Color color)
@@ -84,12 +96,13 @@ public class PlayerController : MonoBehaviour
         // Here I specify "Player/" but it in not required if assigning the action map in PlayerInput inspector.
         InputActionMove = playerInput.actions.FindAction($"Player/Move");
         InputActionJump = playerInput.actions.FindAction($"Player/Jump");
+        InputActionStartGame = playerInput.actions.FindAction($"Player/StartGame");
     }
 
     // Assign player number on spawn
     public void AssignPlayerNumber(int playerNumber)
     {
-        this.PlayerNumber = playerNumber;
+       this.PlayerNumber  = playerNumber;
     }
 
     public void AssignTrapperRole(bool isTrapper)
@@ -109,6 +122,13 @@ public class PlayerController : MonoBehaviour
     public void Update()
     {
         if (!canControl) return;
+        if(!gameManager.gameStarted)
+        {
+            if(InputActionStartGame.WasPressedThisFrame())
+            {
+                gameManager.StartGame();
+            }
+        }
         switch (isTrapper)
         {
             case true:
@@ -116,7 +136,7 @@ public class PlayerController : MonoBehaviour
                 {
                     trapperInteract = true;
                 }
-                return;
+                break;
             case false:
                 // Read the "Jump" action state, which is a boolean value
                 if (InputActionJump.WasPressedThisFrame() && !jumping)
@@ -126,7 +146,7 @@ public class PlayerController : MonoBehaviour
                     DoJump = true;
                     jumping = true;
                 }
-                return;
+                break;
         } 
     }
 
@@ -337,6 +357,34 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public void GoToNextRoom(int roomNumber)
+    {
+        if (isTrapper) return;
+        Debug.Log("current room: " +roomNumber);
+        switch (PlayerNumber)
+        {
+            case 1:
+                Debug.Log("Trapper moved by runner logic");
+                break;
+            case 2:
+                this.transform.position = player2Points[roomNumber].roomStartPos;
+                break;
+            case 3:
+                this.transform.position = player3Points[roomNumber].roomStartPos;
+                break;
+            case 4:
+                this.transform.position = player4Points[roomNumber].roomStartPos;
+                break;
+            case 5:
+                this.transform.position = player5Points[roomNumber].roomStartPos;
+                break;
+            case 6:
+                this.transform.position = player6Points[roomNumber].roomStartPos;
+                break;
+
+        }
+    }
+
     public void OnCollisionEnter2D(UnityEngine.Collision2D collision)
     {
         Debug.Log("Collided with " + collision.gameObject);
@@ -394,8 +442,36 @@ public class PlayerController : MonoBehaviour
 
     public void RunnerDie()
     {
-        SpriteRenderer.color = Color.white;
-        canControl = false;
+        this.Rigidbody2D.angularVelocity = 0;
+        this.Rigidbody2D.linearVelocity = Vector3.zero;
+        doneRoom = true;
+        switch (this.PlayerNumber)
+        {
+            case 1:
+                Debug.Log("Trapper died to runner logic!");
+                return;
+            case 2:
+                this.transform.position = player2Jail.transform.position;               
+                return;
+            case 3:
+                this.transform.position = player3Jail.transform.position;
+                return;
+            case 4:
+                this.transform.position = player4Jail.transform.position;
+                return;
+            case 5:
+                this.transform.position = player5Jail.transform.position;
+                return;
+            case 6:
+                this.transform.position = player6Jail.transform.position;
+                return;
+            default:
+                Debug.Log("Failed to send dead player to jail.");
+                return;
+
+        }
+        //SpriteRenderer.color = Color.white;
+        //canControl = false;
     }
 
     // OnValidate runs after any change in the inspector for this script.

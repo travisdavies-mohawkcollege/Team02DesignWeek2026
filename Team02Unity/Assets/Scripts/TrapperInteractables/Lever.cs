@@ -5,6 +5,7 @@ public class Lever : MonoBehaviour
 {
     public PlayerController trapper;
     public List<Flamethrower> flamethrowers;
+    public List<Lights> lights;
 
     public void EndLeverAnim()
     {
@@ -23,6 +24,10 @@ public class Lever : MonoBehaviour
         foreach(Flamethrower flamethrower in flamethrowers)
         {
             flamethrower.ActivateFlamethrowers();
+        }
+        foreach( Lights light in lights)
+        {
+            light.TurnOffLights();
         }
     }
 
