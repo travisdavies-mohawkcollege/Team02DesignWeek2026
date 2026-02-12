@@ -1,35 +1,31 @@
-using JetBrains.Annotations;
-using NUnit.Framework;
 using UnityEngine;
-using System;
+using System.Collections.Generic;
 
-public class Button : MonoBehaviour
+public class Lever : MonoBehaviour
 {
-
     public PlayerController trapper;
-    public Sprite buttonSprite;
-    public PitTrap pitTrap;
-    public void Start()
-    {
-        SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
-        spriteRenderer.sprite = buttonSprite;
-    }
-    public void EndAnim()
+    public List<Flamethrower> flamethrowers;
+
+    public void EndLeverAnim()
     {
         trapper = GetTrapper();
         Animator animator = GetComponent<Animator>();
-        animator.SetBool("pressingButton", false);
+        animator.SetBool("pullingLever", false);
         trapper.SpriteRenderer.enabled = true;
-        //trapper.trapperInteract = false;
-        TriggerTrap();
+        trapper.canControl = true;
+       
     }
 
-    public void TriggerTrap()
+    public void TriggerLeverTrap()
     {
         trapper = GetTrapper();
-        trapper.buttonOnCooldown = true;
-        pitTrap.ActivatePitTrap();
+        trapper.leverOnCooldown = true;
+        foreach(Flamethrower flamethrower in flamethrowers)
+        {
+            flamethrower.ActivateFlamethrowers();
+        }
     }
+
     public PlayerController GetTrapper()
     {
         PlayerController[] players = FindObjectsByType<PlayerController>(FindObjectsSortMode.None);
@@ -42,4 +38,6 @@ public class Button : MonoBehaviour
         }
         return null;
     }
+
+
 }

@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 4714393498077282954}
   - component: {fileID: 3752404572598628836}
   - component: {fileID: 5016796433398627693}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -79,7 +79,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 5
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -223,9 +223,16 @@ MonoBehaviour:
   <trapperInteractableMask>k__BackingField:
     serializedVersion: 2
     m_Bits: 64
+  canControl: 1
   maxSize: {x: 2, y: 2, z: 2}
   minSize: {x: 0.75, y: 0.75, z: 0.75}
   pitTrapTest: {fileID: 0}
+  buttonCooldown: 3
+  buttonTimer: 3
+  buttonOnCooldown: 0
+  switchCooldown: 0
+  switchTimer: 0
+  switchOnCooldown: 0
 --- !u!50 &3752404572598628836
 Rigidbody2D:
   serializedVersion: 5
@@ -239,7 +246,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 0.5
-  m_LinearDamping: 0
+  m_LinearDamping: 0.5
   m_AngularDamping: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -248,9 +255,9 @@ Rigidbody2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_Interpolate: 0
-  m_SleepingMode: 1
+  m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 0
 --- !u!58 &5016796433398627693
@@ -269,7 +276,7 @@ CircleCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
