@@ -124,10 +124,13 @@ public class PlayerController : MonoBehaviour
         if (!canControl) return;
         if(!gameManager.gameStarted)
         {
-            if(InputActionStartGame.WasPressedThisFrame())
+            if (isTrapper )
             {
-                gameManager.StartGame();
-            }
+                if (InputActionStartGame.WasPressedThisFrame())
+                {
+                    gameManager.StartGame();
+                }
+            } 
         }
         switch (isTrapper)
         {
@@ -383,6 +386,9 @@ public class PlayerController : MonoBehaviour
                 break;
 
         }
+        canControl = true;
+        doneRoom = false;
+        
     }
 
     public void OnCollisionEnter2D(UnityEngine.Collision2D collision)
@@ -401,6 +407,13 @@ public class PlayerController : MonoBehaviour
         if (collider.gameObject.CompareTag("Fire"))
         {
             RunnerDie();
+        }
+        else if (collider.gameObject.CompareTag("DoneRoom"))
+        {
+            canControl = false;
+            doneRoom = true;
+            Rigidbody2D.linearVelocity = Vector3.zero;
+            Rigidbody2D.angularVelocity = 0;
         }
     }
     public void OnTriggerStay2D(Collider2D collider)

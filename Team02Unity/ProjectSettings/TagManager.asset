@@ -12,6 +12,7 @@ TagManager:
   - Switch
   - Lever
   - Fire
+  - DoneRoom
   layers:
   - Default
   - TransparentFX
