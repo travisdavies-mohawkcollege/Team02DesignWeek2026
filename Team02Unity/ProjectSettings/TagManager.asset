@@ -6,6 +6,13 @@ TagManager:
   tags:
   - Button
   - PitTrap
+  - ConveyerBelt
+  - Car
+  - TrapperControls
+  - Switch
+  - Lever
+  - Fire
+  - DoneRoom
   layers:
   - Default
   - TransparentFX
@@ -14,8 +21,8 @@ TagManager:
   - Water
   - UI
   - Interactable
-  - 
-  - 
+  - Terrain
+  - Player
   - 
   - 
   - 

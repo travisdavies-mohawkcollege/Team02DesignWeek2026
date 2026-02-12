@@ -1,7 +1,9 @@
+using JetBrains.Annotations;
 using System.Collections;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UIElements;
 
 public class PlayerController : MonoBehaviour
 {
@@ -11,7 +13,6 @@ public class PlayerController : MonoBehaviour
     [field: SerializeField] public Rigidbody2D Rigidbody2D { get; private set; }
     [field: SerializeField] public float MoveSpeed { get; private set; } = 10f;
     [field: SerializeField] public float JumpForce { get; private set; } = 5f;
-    [field: SerializeField] public GroundCheck groundCheckObject;
 
 
     //Trapper Variables
@@ -24,18 +25,23 @@ public class PlayerController : MonoBehaviour
 
     //Various Vexing Variables
     public bool DoJump { get; private set; }
-    public bool canControl { get; private set; }
+    public bool canControl = true;
+    public GameObject player2Jail, player3Jail, player4Jail, player5Jail, player6Jail;
+    public GameManager gameManager;
 
+    public PlayPointData[] player2Points, player3Points, player4Points, player5Points, player6Points;
 
     // Player input information
     private PlayerInput PlayerInput;
     private InputAction InputActionMove;
     private InputAction InputActionJump;
+    private InputAction InputActionStartGame;
 
     //Jump Test
     public bool jumping { get; private set; }
     public bool falling { get; private set; }
     public bool grounded { get; private set; } = true;
+    public bool doneRoom = false;
     public Vector3 maxSize = new Vector3(2f, 2f, 2f);
     public Vector3 minSize = new Vector3(0.75f, 0.75f, 0.75f);
 
@@ -43,10 +49,24 @@ public class PlayerController : MonoBehaviour
     public PitTrap pitTrapTest;
 
     //Timers
+    //Button
     public float buttonCooldown = 20f;
     public float buttonTimer = 20f;
     public bool buttonOnCooldown = false;
+    //Switch
+    public float switchCooldown;
+    public float switchTimer;
+    public bool switchOnCooldown = false;
+    //Lever
+    public float leverCooldown;
+    public float leverTimer;
+    public bool leverOnCooldown = false;
 
+    public void Start()
+    {
+        gameManager = FindFirstObjectByType<GameManager>();
+        gameManager.playerControllers.Add(this);
+    }
 
     // Assign color value on spawn from main spawner
     public void AssignColor(Color color)
@@ -76,12 +96,13 @@ public class PlayerController : MonoBehaviour
         // Here I specify "Player/" but it in not required if assigning the action map in PlayerInput inspector.
         InputActionMove = playerInput.actions.FindAction($"Player/Move");
         InputActionJump = playerInput.actions.FindAction($"Player/Jump");
+        InputActionStartGame = playerInput.actions.FindAction($"Player/StartGame");
     }
 
     // Assign player number on spawn
     public void AssignPlayerNumber(int playerNumber)
     {
-        this.PlayerNumber = playerNumber;
+       this.PlayerNumber  = playerNumber;
     }
 
     public void AssignTrapperRole(bool isTrapper)
@@ -100,6 +121,17 @@ public class PlayerController : MonoBehaviour
     // Runs each frame
     public void Update()
     {
+        if (!canControl) return;
+        if(!gameManager.gameStarted)
+        {
+            if (isTrapper )
+            {
+                if (InputActionStartGame.WasPressedThisFrame())
+                {
+                    gameManager.StartGame();
+                }
+            } 
+        }
         switch (isTrapper)
         {
             case true:
@@ -107,7 +139,7 @@ public class PlayerController : MonoBehaviour
                 {
                     trapperInteract = true;
                 }
-                return;
+                break;
             case false:
                 // Read the "Jump" action state, which is a boolean value
                 if (InputActionJump.WasPressedThisFrame() && !jumping)
@@ -117,13 +149,14 @@ public class PlayerController : MonoBehaviour
                     DoJump = true;
                     jumping = true;
                 }
-                return;
+                break;
         } 
     }
 
     // Runs each phsyics update
     void FixedUpdate()
     {
+        if (!canControl) return;
         if (Rigidbody2D == null)
         {
             Debug.Log($"{name}'s {nameof(PlayerController)}.{nameof(Rigidbody2D)} is null.");
@@ -218,25 +251,60 @@ public class PlayerController : MonoBehaviour
             {
                 if(buttonOnCooldown)
                 {
-                    Debug.Log("Button on CD");
+                    //Debug.Log("Button on CD");
                     trapperInteract = false;
                 }
                 else
                 {
-                    Debug.Log("Interacted with Button");
+                    //Debug.Log("Interacted with Button");
                     Animator buttonAnim = hit.collider.GetComponent<Animator>();
                     this.SpriteRenderer.enabled = false;
                     buttonAnim.SetBool("pressingButton", true);
                     trapperInteract = false;
-                    buttonTimer = 10f;
+                    buttonTimer = 6f;
+                    canControl = false;
                     //buttonOnCooldown = true;
                 }
                     
             }
+            else if (hit.collider.gameObject.CompareTag("Switch"))
+            {
+                //Switch Interaction Logic
+                if(switchOnCooldown)
+                {
+                    trapperInteract = false;
+                }
+                else
+                {
+                    //TrigggerSwitchTraps
+                    Animator switchAnim = hit.collider.GetComponent<Animator>();
+                    this.SpriteRenderer.enabled = false;
+                    switchAnim.SetBool("pullingSwitch", true);
+                    trapperInteract = false;
+                    switchTimer = 6f;
+                    canControl = false;
+                }
+            }
+            else if (hit.collider.gameObject.CompareTag("Lever"))
+            {
+                if(leverOnCooldown)
+                {
+                    trapperInteract = false;
+                }
+                else
+                {
+                    Animator leverAnim = hit.collider.GetComponent<Animator>();
+                    this.SpriteRenderer.enabled = false;
+                    leverAnim.SetBool("pullingLever", true);
+                    trapperInteract = false;
+                    leverTimer = 5f;
+                    canControl = false;
+                }
+            }
             else
             {
                 trapperInteract = false;
-                Debug.Log(hit.collider.gameObject);
+                //Debug.Log(hit.collider.gameObject);
             }
         }
         
@@ -245,6 +313,8 @@ public class PlayerController : MonoBehaviour
     private void TrapperTimers()
     {
         ButtonTimer();
+        SwitchTimer();
+        LeverTimer();
     }
 
     private void ButtonTimer()
@@ -258,27 +328,163 @@ public class PlayerController : MonoBehaviour
         if (buttonOnCooldown)
         {
             buttonTimer -= Time.deltaTime;
-            Debug.Log(buttonTimer);
+            //Debug.Log(buttonTimer);
         }
+    }
+
+    private void SwitchTimer()
+    {
+
+        if (switchTimer <= 0)
+        {
+            switchTimer = switchCooldown;
+            switchOnCooldown = false;
+        }
+        if (switchOnCooldown)
+        {
+            switchTimer -= Time.deltaTime;
+        }
+    }
+
+    private void LeverTimer()
+    {
+
+        if (leverTimer <= 0)
+        {
+            leverTimer = leverCooldown;
+            leverOnCooldown = false;
+        }
+        if (leverOnCooldown)
+        {
+            leverTimer -= Time.deltaTime;
+        }
+    }
+
+    public void GoToNextRoom(int roomNumber)
+    {
+        if (isTrapper) return;
+        Debug.Log("current room: " +roomNumber);
+        switch (PlayerNumber)
+        {
+            case 1:
+                Debug.Log("Trapper moved by runner logic");
+                break;
+            case 2:
+                this.transform.position = player2Points[roomNumber].roomStartPos;
+                break;
+            case 3:
+                this.transform.position = player3Points[roomNumber].roomStartPos;
+                break;
+            case 4:
+                this.transform.position = player4Points[roomNumber].roomStartPos;
+                break;
+            case 5:
+                this.transform.position = player5Points[roomNumber].roomStartPos;
+                break;
+            case 6:
+                this.transform.position = player6Points[roomNumber].roomStartPos;
+                break;
+
+        }
+        canControl = true;
+        doneRoom = false;
+        
+    }
+
+    public void OnCollisionEnter2D(UnityEngine.Collision2D collision)
+    {
+        Debug.Log("Collided with " + collision.gameObject);
+        //Debug.Log(grounded);
+        if (collision.gameObject.CompareTag("Car"))
+        {
+            RunnerDie();
+        }
+       
     }
 
     public void OnTriggerEnter2D(Collider2D collider)
     {
-        Debug.Log("Collided with " + collider.gameObject);
-        Debug.Log(grounded);
+        if (collider.gameObject.CompareTag("Fire"))
+        {
+            RunnerDie();
+        }
+        else if (collider.gameObject.CompareTag("DoneRoom"))
+        {
+            canControl = false;
+            doneRoom = true;
+            Rigidbody2D.linearVelocity = Vector3.zero;
+            Rigidbody2D.angularVelocity = 0;
+        }
+    }
+    public void OnTriggerStay2D(Collider2D collider)
+    {
+        //Debug.Log("OnTriggerStay2D");
+        if(collider.gameObject.CompareTag("ConveyerBelt"))
+        {
+            //Debug.Log("in conveyer belt");
+            if (grounded)
+            {
+                ConveyerBelt belt = FindFirstObjectByType<ConveyerBelt>();
+                if (belt != null)
+                {
+                    Rigidbody2D.AddForce(belt.GetRot() * 5, ForceMode2D.Force);
+                    //Debug.Log(belt.GetRot());
+                    //Debug.Log("Adding force!");
+                }
+                else
+                {
+                    //Debug.Log("Belt is null");
+                }
+            }
+        }
+        //Pittrap
+        //Debug.Log("Collided with " + collider.gameObject);
+        //Debug.Log(grounded);
         if (collider.gameObject.CompareTag("PitTrap"))
         {
             if (grounded)
             {
-                //Take Damage
-                RunnerDie();
+                if(collider.bounds.Contains(this.GetComponent<Collider2D>().bounds.center))
+                {
+                    RunnerDie();
+                }
+
             }
         }
     }
 
     public void RunnerDie()
     {
-        SpriteRenderer.color = Color.white;
+        this.Rigidbody2D.angularVelocity = 0;
+        this.Rigidbody2D.linearVelocity = Vector3.zero;
+        doneRoom = true;
+        switch (this.PlayerNumber)
+        {
+            case 1:
+                Debug.Log("Trapper died to runner logic!");
+                return;
+            case 2:
+                this.transform.position = player2Jail.transform.position;               
+                return;
+            case 3:
+                this.transform.position = player3Jail.transform.position;
+                return;
+            case 4:
+                this.transform.position = player4Jail.transform.position;
+                return;
+            case 5:
+                this.transform.position = player5Jail.transform.position;
+                return;
+            case 6:
+                this.transform.position = player6Jail.transform.position;
+                return;
+            default:
+                Debug.Log("Failed to send dead player to jail.");
+                return;
+
+        }
+        //SpriteRenderer.color = Color.white;
+        //canControl = false;
     }
 
     // OnValidate runs after any change in the inspector for this script.

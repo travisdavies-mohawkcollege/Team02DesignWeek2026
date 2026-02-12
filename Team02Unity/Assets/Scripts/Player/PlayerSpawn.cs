@@ -50,6 +50,7 @@ public class PlayerSpawn : MonoBehaviour
         {
             playerController.AssignTrapperRole(true);
             playerController.AssignTrapperSprite();
+            playerController.gameObject.transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
         }
         else playerController.AssignColor(color);
 

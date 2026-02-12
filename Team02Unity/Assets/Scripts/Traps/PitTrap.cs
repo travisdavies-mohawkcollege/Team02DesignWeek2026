@@ -20,10 +20,9 @@ public class PitTrap : MonoBehaviour
         foreach (Vector3Int trapPos in pittrap.trappedTilePos)
         {
             tilemap.SetTile(trapPos, pittrap.trapDoor);
-            Vector3Int cellPos = tilemap.WorldToCell(trapPos);
         }
         button = FindFirstObjectByType<Button>();
-        button.pitTrap = this;
+        button.pitTraps.Add(this);
     }
     public void ActivatePitTrap()
     {

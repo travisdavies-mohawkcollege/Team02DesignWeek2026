@@ -1,0 +1,429 @@
+fileFormatVersion: 2
+guid: 59f2fa7c988dc0b449ee9a841d948554
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5463599740740553650
+    second: TrapperSwitch_0
+  - first:
+      213: 4315070233093512846
+    second: TrapperSwitch_1
+  - first:
+      213: 1922186041223722897
+    second: TrapperSwitch_2
+  - first:
+      213: -9127934543200771863
+    second: TrapperSwitch_3
+  - first:
+      213: -5451981577730106536
+    second: TrapperSwitch_4
+  - first:
+      213: -1216269021155288769
+    second: TrapperSwitch_5
+  - first:
+      213: 8401603594849655785
+    second: TrapperSwitch_6
+  - first:
+      213: 6191306610214794706
+    second: TrapperSwitch_7
+  - first:
+      213: 89747894383663855
+    second: TrapperSwitch_8
+  - first:
+      213: 4918754102923725254
+    second: TrapperSwitch_9
+  - first:
+      213: 5153454216615575100
+    second: TrapperSwitch_10
+  - first:
+      213: -2964307834234825090
+    second: TrapperSwitch_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TrapperSwitch_0
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 3399
+        width: 361
+        height: 684
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e443e32bbf46d24b0800000000000000
+      internalID: -5463599740740553650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapperSwitch_1
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 3359
+        width: 519
+        height: 724
+      alignment: 9
+      pivot: {x: 0.3424177, y: 0.56644905}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8e9668c38532eb30800000000000000
+      internalID: 4315070233093512846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapperSwitch_2
+      rect:
+        serializedVersion: 2
+        x: 1329
+        y: 3381
+        width: 480
+        height: 713
+      alignment: 9
+      pivot: {x: 0.329614, y: 0.5539794}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 197ba53350afcaa10800000000000000
+      internalID: 1922186041223722897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapperSwitch_3
+      rect:
+        serializedVersion: 2
+        x: 1935
+        y: 3386
+        width: 460
+        height: 710
+      alignment: 9
+      pivot: {x: 0.30128917, y: 0.59486306}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e0208315ef035180800000000000000
+      internalID: -9127934543200771863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapperSwitch_4
+      rect:
+        serializedVersion: 2
+        x: 2558
+        y: 3398
+        width: 457
+        height: 688
+      alignment: 9
+      pivot: {x: 0.29998472, y: 0.5839113}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85b5c6114aba654b0800000000000000
+      internalID: -5451981577730106536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapperSwitch_5
+      rect:
+        serializedVersion: 2
+        x: 3178
+        y: 3290
+        width: 446
+        height: 783
+      alignment: 9
+      pivot: {x: 0.3921331, y: 0.6413166}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f391ab2f4c1fe1fe0800000000000000
+      internalID: -1216269021155288769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapperSwitch_6
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 1766
+        width: 479
+        height: 902
+      alignment: 9
+      pivot: {x: 0.4598255, y: 0.7293444}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9eb98a6b4fd789470800000000000000
+      internalID: 8401603594849655785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapperSwitch_7
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 1568
+        width: 457
+        height: 1095
+      alignment: 9
+      pivot: {x: 0.45789135, y: 0.7460369}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d5716d1f80fbe550800000000000000
+      internalID: 6191306610214794706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapperSwitch_8
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1447
+        width: 501
+        height: 1146
+      alignment: 9
+      pivot: {x: 0.49039787, y: 0.7728695}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fead3140c39de3100800000000000000
+      internalID: 89747894383663855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapperSwitch_9
+      rect:
+        serializedVersion: 2
+        x: 1847
+        y: 1394
+        width: 498
+        height: 1247
+      alignment: 9
+      pivot: {x: 0.52898115, y: 0.7970643}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c98342cbcce24440800000000000000
+      internalID: 4918754102923725254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapperSwitch_10
+      rect:
+        serializedVersion: 2
+        x: 2548
+        y: 2012
+        width: 384
+        height: 714
+      alignment: 9
+      pivot: {x: 0.48747253, y: 0.6145454}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3e3c9b4e4fb48740800000000000000
+      internalID: 5153454216615575100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapperSwitch_11
+      rect:
+        serializedVersion: 2
+        x: 3180
+        y: 2023
+        width: 361
+        height: 683
+      alignment: 9
+      pivot: {x: 0.47334674, y: 0.60565674}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e769687fab9acd6d0800000000000000
+      internalID: -2964307834234825090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: cb75e96e2895a8042b36061e94326c78
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      TrapperSwitch_0: -5463599740740553650
+      TrapperSwitch_1: 4315070233093512846
+      TrapperSwitch_10: 5153454216615575100
+      TrapperSwitch_11: -2964307834234825090
+      TrapperSwitch_2: 1922186041223722897
+      TrapperSwitch_3: -9127934543200771863
+      TrapperSwitch_4: -5451981577730106536
+      TrapperSwitch_5: -1216269021155288769
+      TrapperSwitch_6: 8401603594849655785
+      TrapperSwitch_7: 6191306610214794706
+      TrapperSwitch_8: 89747894383663855
+      TrapperSwitch_9: 4918754102923725254
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

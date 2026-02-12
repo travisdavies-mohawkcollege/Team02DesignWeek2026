@@ -1,0 +1,377 @@
+fileFormatVersion: 2
+guid: d58b72ca184a94a4796d1bf0203133af
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6676980671662152746
+    second: TrapperDial_0
+  - first:
+      213: 6346258043915113203
+    second: TrapperDial_1
+  - first:
+      213: 4117696509959273653
+    second: TrapperDial_2
+  - first:
+      213: 2733841685664468150
+    second: TrapperDial_3
+  - first:
+      213: 4645582874078905777
+    second: TrapperDial_4
+  - first:
+      213: -5232303549399203020
+    second: TrapperDial_5
+  - first:
+      213: 5302595596019382679
+    second: TrapperDial_6
+  - first:
+      213: -2720539912626484737
+    second: TrapperDial_7
+  - first:
+      213: 2595348756345514933
+    second: TrapperDial_8
+  - first:
+      213: -3735136434155469683
+    second: TrapperDial_9
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TrapperDial_0
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 3536
+        width: 659
+        height: 542
+      alignment: 9
+      pivot: {x: 0.67689025, y: 0.37453875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d3ad6d84799653a0800000000000000
+      internalID: -6676980671662152746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapperDial_1
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 3225
+        width: 695
+        height: 853
+      alignment: 9
+      pivot: {x: 0.70267063, y: 0.6024941}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f296882110721850800000000000000
+      internalID: 6346258043915113203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapperDial_2
+      rect:
+        serializedVersion: 2
+        x: 1468
+        y: 3301
+        width: 705
+        height: 777
+      alignment: 9
+      pivot: {x: 0.7135749, y: 0.57501274}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bcfcf8c82ff42930800000000000000
+      internalID: 4117696509959273653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapperDial_3
+      rect:
+        serializedVersion: 2
+        x: 2238
+        y: 3312
+        width: 659
+        height: 784
+      alignment: 9
+      pivot: {x: 0.68425983, y: 0.55575687}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bc8f22578e80f520800000000000000
+      internalID: 2733841685664468150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapperDial_4
+      rect:
+        serializedVersion: 2
+        x: 2969
+        y: 3358
+        width: 652
+        height: 729
+      alignment: 9
+      pivot: {x: 0.69368774, y: 0.533313}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b58c18b20d687040800000000000000
+      internalID: 4645582874078905777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapperDial_5
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 2211
+        width: 657
+        height: 728
+      alignment: 9
+      pivot: {x: 0.6848215, y: 0.5333584}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4338b0dc4af1367b0800000000000000
+      internalID: -5232303549399203020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapperDial_6
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 2110
+        width: 715
+        height: 725
+      alignment: 9
+      pivot: {x: 0.7037946, y: 0.66748583}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7993948a99a969940800000000000000
+      internalID: 5302595596019382679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapperDial_7
+      rect:
+        serializedVersion: 2
+        x: 1441
+        y: 1878
+        width: 727
+        height: 937
+      alignment: 9
+      pivot: {x: 0.7204731, y: 0.7643668}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff940ae0d53be3ad0800000000000000
+      internalID: -2720539912626484737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapperDial_8
+      rect:
+        serializedVersion: 2
+        x: 2223
+        y: 1811
+        width: 674
+        height: 1004
+      alignment: 9
+      pivot: {x: 0.6873649, y: 0.7854269}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bbe93271f7840420800000000000000
+      internalID: 2595348756345514933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapperDial_9
+      rect:
+        serializedVersion: 2
+        x: 2944
+        y: 1818
+        width: 682
+        height: 997
+      alignment: 9
+      pivot: {x: 0.6709235, y: 0.7825591}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d844b86e3312a2cc0800000000000000
+      internalID: -3735136434155469683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 8336cd6be95d4554c80c92d9d7de97f4
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      TrapperDial_0: -6676980671662152746
+      TrapperDial_1: 6346258043915113203
+      TrapperDial_2: 4117696509959273653
+      TrapperDial_3: 2733841685664468150
+      TrapperDial_4: 4645582874078905777
+      TrapperDial_5: -5232303549399203020
+      TrapperDial_6: 5302595596019382679
+      TrapperDial_7: -2720539912626484737
+      TrapperDial_8: 2595348756345514933
+      TrapperDial_9: -3735136434155469683
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

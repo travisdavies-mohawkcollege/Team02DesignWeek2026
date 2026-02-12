@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 4714393498077282954}
   - component: {fileID: 3752404572598628836}
   - component: {fileID: 5016796433398627693}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 6264114325874547999}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -40.48, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -79,7 +79,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 5
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -192,6 +192,10 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 641cd816-40e6-41b4-8c3d-04687c349290
     m_ActionName: 'Player/Sprint[/Keyboard/leftShift]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 44c59714-7d85-47e2-9aab-f618da3906d7
+    m_ActionName: 'Player/StartGame[/Keyboard/enter,/DualSenseGamepadHID/start]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -215,7 +219,6 @@ MonoBehaviour:
   <Rigidbody2D>k__BackingField: {fileID: 3752404572598628836}
   <MoveSpeed>k__BackingField: 10
   <JumpForce>k__BackingField: 5
-  groundCheckObject: {fileID: 0}
   <isTrapper>k__BackingField: 0
   <sprTrapperHand>k__BackingField: {fileID: -1156535331316730169, guid: 36c78f36a01a3c94d9d99f4cdeff7006, type: 3}
   <interactionRange>k__BackingField: 25
@@ -223,9 +226,46 @@ MonoBehaviour:
   <trapperInteractableMask>k__BackingField:
     serializedVersion: 2
     m_Bits: 64
+  canControl: 1
+  player2Jail: {fileID: 1679137352124612547, guid: 2e8ee9aad895a57448f6184441dfc913, type: 3}
+  player3Jail: {fileID: 1784900779146207042, guid: 54217f1ae3ce5d444ad7f03a12e116ea, type: 3}
+  player4Jail: {fileID: 5474210866328715731, guid: 5ba1d4c25b935624ea6f054e25d61637, type: 3}
+  player5Jail: {fileID: 1114411888275956496, guid: 9315c563b9f0f6e4888fc171f08890e1, type: 3}
+  player6Jail: {fileID: 3962484272901219731, guid: 31e52c459e1fad7428ead5d1ecf29f83, type: 3}
+  gameManager: {fileID: 0}
+  player2Points:
+  - roomStartPos: {x: 23.369995, y: -7.3200073, z: 0}
+  - roomStartPos: {x: 23.92, y: 16.56, z: 0}
+  - roomStartPos: {x: 23.48, y: 39.5, z: 0}
+  player3Points:
+  - roomStartPos: {x: 0, y: 0, z: 0}
+  - roomStartPos: {x: 26.41, y: 16.56, z: 0}
+  - roomStartPos: {x: 26.42, y: 39.5, z: 0}
+  player4Points:
+  - roomStartPos: {x: 0, y: 0, z: 0}
+  - roomStartPos: {x: 28.55, y: 16.56, z: 0}
+  - roomStartPos: {x: 28.55, y: 39.5, z: 0}
+  player5Points:
+  - roomStartPos: {x: 0, y: 0, z: 0}
+  - roomStartPos: {x: 31.38, y: 16.56, z: 0}
+  - roomStartPos: {x: 31.48, y: 39.5, z: 0}
+  player6Points:
+  - roomStartPos: {x: 0, y: 0, z: 0}
+  - roomStartPos: {x: 33.61, y: 16.56, z: 0}
+  - roomStartPos: {x: 33.52, y: 39.5, z: 0}
+  doneRoom: 0
   maxSize: {x: 2, y: 2, z: 2}
   minSize: {x: 0.75, y: 0.75, z: 0.75}
   pitTrapTest: {fileID: 0}
+  buttonCooldown: 3
+  buttonTimer: 3
+  buttonOnCooldown: 0
+  switchCooldown: 0
+  switchTimer: 0
+  switchOnCooldown: 0
+  leverCooldown: 0
+  leverTimer: 0
+  leverOnCooldown: 0
 --- !u!50 &3752404572598628836
 Rigidbody2D:
   serializedVersion: 5
@@ -239,7 +279,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 0.5
-  m_LinearDamping: 0
+  m_LinearDamping: 1
   m_AngularDamping: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -248,9 +288,9 @@ Rigidbody2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_Interpolate: 0
-  m_SleepingMode: 1
+  m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 0
 --- !u!58 &5016796433398627693
@@ -269,7 +309,7 @@ CircleCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2

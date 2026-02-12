@@ -1,0 +1,1053 @@
+fileFormatVersion: 2
+guid: 53a8bb87705591d499e0e41c478d6543
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7078182643151590530
+    second: TrapperGrenade_0
+  - first:
+      213: 13701571551885141
+    second: TrapperGrenade_1
+  - first:
+      213: -4017727268001726886
+    second: TrapperGrenade_2
+  - first:
+      213: 5615581760279113985
+    second: TrapperGrenade_3
+  - first:
+      213: -152776947516087366
+    second: TrapperGrenade_4
+  - first:
+      213: -4679434153168923732
+    second: TrapperGrenade_5
+  - first:
+      213: 5685008822002606950
+    second: TrapperGrenade_6
+  - first:
+      213: 4582678873470392167
+    second: TrapperGrenade_7
+  - first:
+      213: -5948097995245079335
+    second: TrapperGrenade_8
+  - first:
+      213: 4497911108103029130
+    second: TrapperGrenade_9
+  - first:
+      213: -6112667462843148601
+    second: TrapperGrenade_10
+  - first:
+      213: 558590605315882898
+    second: TrapperGrenade_11
+  - first:
+      213: -2149302088001558262
+    second: TrapperGrenade_12
+  - first:
+      213: -8163870899391868867
+    second: TrapperGrenade_13
+  - first:
+      213: -3501849355648005510
+    second: TrapperGrenade_14
+  - first:
+      213: 3010381361985387440
+    second: TrapperGrenade_15
+  - first:
+      213: 2262311709874319141
+    second: TrapperGrenade_16
+  - first:
+      213: -2689333195124068106
+    second: TrapperGrenade_17
+  - first:
+      213: 1112205157393939819
+    second: TrapperGrenade_18
+  - first:
+      213: -6927790771661189546
+    second: TrapperGrenade_19
+  - first:
+      213: 4354795469786300313
+    second: TrapperGrenade_20
+  - first:
+      213: 2567432896106145920
+    second: TrapperGrenade_21
+  - first:
+      213: 1021098249632758002
+    second: TrapperGrenade_22
+  - first:
+      213: 6939358126807564976
+    second: TrapperGrenade_23
+  - first:
+      213: -768550988536166831
+    second: TrapperGrenade_24
+  - first:
+      213: -5681081940150857926
+    second: TrapperGrenade_25
+  - first:
+      213: 6778504443440346177
+    second: TrapperGrenade_26
+  - first:
+      213: 767846690346123117
+    second: TrapperGrenade_27
+  - first:
+      213: 6713499629956769256
+    second: TrapperGrenade_28
+  - first:
+      213: 228407091161570744
+    second: TrapperGrenade_29
+  - first:
+      213: -8241187444592502348
+    second: TrapperGrenade_30
+  - first:
+      213: -812862621311452131
+    second: TrapperGrenade_31
+  - first:
+      213: -2786339904176793049
+    second: TrapperGrenade_32
+  - first:
+      213: 2469556149068852980
+    second: TrapperGrenade_33
+  - first:
+      213: 3800647963237126059
+    second: TrapperGrenade_34
+  - first:
+      213: -304776081947141297
+    second: TrapperGrenade_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TrapperGrenade_0
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 3655
+        width: 355
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7b2d9b436e35cd90800000000000000
+      internalID: -7078182643151590530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapperGrenade_1
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 3595
+        width: 548
+        height: 501
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 557f639b18da03000800000000000000
+      internalID: 13701571551885141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapperGrenade_2
+      rect:
+        serializedVersion: 2
+        x: 2065
+        y: 3516
+        width: 529
+        height: 501
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5e3b5a265a2e38c0800000000000000
+      internalID: -4017727268001726886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapperGrenade_3
+      rect:
+        serializedVersion: 2
+        x: 3064
+        y: 3544
+        width: 473
+        height: 409
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 101799cbbdd8eed40800000000000000
+      internalID: 5615581760279113985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapperGrenade_4
+      rect:
+        serializedVersion: 2
+        x: 4047
+        y: 3540
+        width: 457
+        height: 431
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab36f69fc2a31edf0800000000000000
+      internalID: -152776947516087366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapperGrenade_5
+      rect:
+        serializedVersion: 2
+        x: 4849
+        y: 3463
+        width: 361
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca3198e2e6f4f0fb0800000000000000
+      internalID: -4679434153168923732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapperGrenade_6
+      rect:
+        serializedVersion: 2
+        x: 5068
+        y: 3560
+        width: 404
+        height: 456
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6636d64376535ee40800000000000000
+      internalID: 5685008822002606950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapperGrenade_7
+      rect:
+        serializedVersion: 2
+        x: 5926
+        y: 3541
+        width: 357
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 767d3e4c722f89f30800000000000000
+      internalID: 4582678873470392167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapperGrenade_8
+      rect:
+        serializedVersion: 2
+        x: 6139
+        y: 3566
+        width: 375
+        height: 481
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d43430436c147da0800000000000000
+      internalID: -5948097995245079335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapperGrenade_9
+      rect:
+        serializedVersion: 2
+        x: 6948
+        y: 3527
+        width: 654
+        height: 513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a81c3c5625acb6e30800000000000000
+      internalID: 4497911108103029130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapperGrenade_10
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 2551
+        width: 635
+        height: 514
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c6552f24517b2ba0800000000000000
+      internalID: -6112667462843148601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapperGrenade_11
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 2551
+        width: 734
+        height: 481
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29f39bc223380c700800000000000000
+      internalID: 558590605315882898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapperGrenade_12
+      rect:
+        serializedVersion: 2
+        x: 2053
+        y: 2615
+        width: 446
+        height: 382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0969a173252c22e0800000000000000
+      internalID: -2149302088001558262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapperGrenade_13
+      rect:
+        serializedVersion: 2
+        x: 2506
+        y: 2550
+        width: 330
+        height: 506
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d305999cbaa14be80800000000000000
+      internalID: -8163870899391868867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapperGrenade_14
+      rect:
+        serializedVersion: 2
+        x: 3076
+        y: 2528
+        width: 337
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7a8bab809ee66fc0800000000000000
+      internalID: -3501849355648005510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapperGrenade_15
+      rect:
+        serializedVersion: 2
+        x: 3534
+        y: 2537
+        width: 330
+        height: 507
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bb789726e507c920800000000000000
+      internalID: 3010381361985387440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapperGrenade_16
+      rect:
+        serializedVersion: 2
+        x: 4048
+        y: 2505
+        width: 282
+        height: 475
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52fe34e8388556f10800000000000000
+      internalID: 2262311709874319141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapperGrenade_17
+      rect:
+        serializedVersion: 2
+        x: 4521
+        y: 2550
+        width: 330
+        height: 506
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f0b6fd25b19daad0800000000000000
+      internalID: -2689333195124068106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapperGrenade_18
+      rect:
+        serializedVersion: 2
+        x: 5018
+        y: 2505
+        width: 282
+        height: 475
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6db2dba2b85f6f00800000000000000
+      internalID: 1112205157393939819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapperGrenade_19
+      rect:
+        serializedVersion: 2
+        x: 5491
+        y: 2550
+        width: 330
+        height: 506
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65ec7e88ffa8bdf90800000000000000
+      internalID: -6927790771661189546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapperGrenade_20
+      rect:
+        serializedVersion: 2
+        x: 5996
+        y: 2458
+        width: 220
+        height: 492
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99fb71638675f6c30800000000000000
+      internalID: 4354795469786300313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapperGrenade_21
+      rect:
+        serializedVersion: 2
+        x: 6467
+        y: 2586
+        width: 312
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0882f0dbd9a51a320800000000000000
+      internalID: 2567432896106145920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapperGrenade_22
+      rect:
+        serializedVersion: 2
+        x: 6966
+        y: 2458
+        width: 220
+        height: 492
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f83222b27bab2e00800000000000000
+      internalID: 1021098249632758002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapperGrenade_23
+      rect:
+        serializedVersion: 2
+        x: 7437
+        y: 2586
+        width: 312
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b2c595337d8d4060800000000000000
+      internalID: 6939358126807564976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapperGrenade_24
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 1598
+        width: 299
+        height: 518
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 156c688a2fe8555f0800000000000000
+      internalID: -768550988536166831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapperGrenade_25
+      rect:
+        serializedVersion: 2
+        x: 1528
+        y: 1598
+        width: 299
+        height: 518
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3fcb69331eb821b0800000000000000
+      internalID: -5681081940150857926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapperGrenade_26
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 1539
+        width: 452
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1443ba390e5121e50800000000000000
+      internalID: 6778504443440346177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapperGrenade_27
+      rect:
+        serializedVersion: 2
+        x: 3339
+        y: 1916
+        width: 94
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6f3a042f70f7aa00800000000000000
+      internalID: 767846690346123117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapperGrenade_28
+      rect:
+        serializedVersion: 2
+        x: 4314
+        y: 1925
+        width: 59
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e52a4308542b2d50800000000000000
+      internalID: 6713499629956769256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapperGrenade_29
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 1309
+        width: 294
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bd9ddc0a077b2300800000000000000
+      internalID: 228407091161570744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapperGrenade_30
+      rect:
+        serializedVersion: 2
+        x: 1092
+        y: 1309
+        width: 294
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b997adceab61ad80800000000000000
+      internalID: -8241187444592502348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapperGrenade_31
+      rect:
+        serializedVersion: 2
+        x: 2056
+        y: 1135
+        width: 295
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1cb98da0c128b4f0800000000000000
+      internalID: -812862621311452131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapperGrenade_32
+      rect:
+        serializedVersion: 2
+        x: 3026
+        y: 1135
+        width: 294
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72adb0cae9ee459d0800000000000000
+      internalID: -2786339904176793049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapperGrenade_33
+      rect:
+        serializedVersion: 2
+        x: 3212
+        y: 1485
+        width: 394
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fe612abb30a54220800000000000000
+      internalID: 2469556149068852980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapperGrenade_34
+      rect:
+        serializedVersion: 2
+        x: 3996
+        y: 1135
+        width: 295
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: baf8f059f2d9eb430800000000000000
+      internalID: 3800647963237126059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrapperGrenade_35
+      rect:
+        serializedVersion: 2
+        x: 4182
+        y: 1418
+        width: 401
+        height: 299
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4b518ba4c735cbf0800000000000000
+      internalID: -304776081947141297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      TrapperGrenade_0: -7078182643151590530
+      TrapperGrenade_1: 13701571551885141
+      TrapperGrenade_10: -6112667462843148601
+      TrapperGrenade_11: 558590605315882898
+      TrapperGrenade_12: -2149302088001558262
+      TrapperGrenade_13: -8163870899391868867
+      TrapperGrenade_14: -3501849355648005510
+      TrapperGrenade_15: 3010381361985387440
+      TrapperGrenade_16: 2262311709874319141
+      TrapperGrenade_17: -2689333195124068106
+      TrapperGrenade_18: 1112205157393939819
+      TrapperGrenade_19: -6927790771661189546
+      TrapperGrenade_2: -4017727268001726886
+      TrapperGrenade_20: 4354795469786300313
+      TrapperGrenade_21: 2567432896106145920
+      TrapperGrenade_22: 1021098249632758002
+      TrapperGrenade_23: 6939358126807564976
+      TrapperGrenade_24: -768550988536166831
+      TrapperGrenade_25: -5681081940150857926
+      TrapperGrenade_26: 6778504443440346177
+      TrapperGrenade_27: 767846690346123117
+      TrapperGrenade_28: 6713499629956769256
+      TrapperGrenade_29: 228407091161570744
+      TrapperGrenade_3: 5615581760279113985
+      TrapperGrenade_30: -8241187444592502348
+      TrapperGrenade_31: -812862621311452131
+      TrapperGrenade_32: -2786339904176793049
+      TrapperGrenade_33: 2469556149068852980
+      TrapperGrenade_34: 3800647963237126059
+      TrapperGrenade_35: -304776081947141297
+      TrapperGrenade_4: -152776947516087366
+      TrapperGrenade_5: -4679434153168923732
+      TrapperGrenade_6: 5685008822002606950
+      TrapperGrenade_7: 4582678873470392167
+      TrapperGrenade_8: -5948097995245079335
+      TrapperGrenade_9: 4497911108103029130
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
