@@ -35,7 +35,7 @@ If the rendered windows don't start where you want, you should set things up in 
 
 The Viswall will be set up with a tower PC connected to 6 game controllers simultaneously (XBOX and/or PS5, though any traditional controller will do). You do not need to use all controllers for your game. However, the game must remain a multiplayer game.
 
-We encourage you to use as few buttons, triggers, and/or control stick as possible to keep button the game accessible and remove issues related to button mapping across different controllers.
+We encourage you to use as few buttons, triggers, and/or control sticks as possible to keep the game accessible and remove issues related to button mapping across different controllers.
 
 ### 2.1 Input System
 
