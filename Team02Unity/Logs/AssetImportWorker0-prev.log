@@ -1,0 +1,547 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+Built from '6000.0/staging' branch; Version is '6000.0.67f1 (78a1c2bbeb6a) revision 7905730'; Using compiler version '193933523'; Build Type 'Release'
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Marcu" at "2026-02-13T00:14:16.7224744Z"
+OS: 'Windows 11  (10.0.26200) Professional' Language: 'en' Physical Memory: 32694 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-02-13T00:14:16Z
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.0.67f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/Marcu/Documents/GitHub/Team02DesignWeek2026/Team02Unity
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+65086
+-licensingIpc
+LicenseClient-Marcu
+-job-worker-count
+5
+-background-job-worker-count
+8
+-gc-helper-count
+1
+-name
+AssetImport
+Successfully changed project path to: C:/Users/Marcu/Documents/GitHub/Team02DesignWeek2026/Team02Unity
+C:/Users/Marcu/Documents/GitHub/Team02DesignWeek2026/Team02Unity
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [10580]  Target information:
+
+Player connection [10580]  * "[IP] 26.198.222.174 [Port] 0 [Flags] 2 [Guid] 3568007095 [EditorId] 3568007095 [Version] 1048832 [Id] WindowsEditor(7,MerengueFairy) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [10580]  * "[IP] 192.168.40.10 [Port] 0 [Flags] 2 [Guid] 3568007095 [EditorId] 3568007095 [Version] 1048832 [Id] WindowsEditor(7,MerengueFairy) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [10580] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [10580] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 5
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Refreshing native plugins compatible for Editor in 4.24 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.0.67f1 (78a1c2bbeb6a)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.0.67f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Marcu/Documents/GitHub/Team02DesignWeek2026/Team02Unity/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3060 (ID=0x2504)
+    Vendor:   NVIDIA
+    VRAM:     12113 MB
+    Driver:   32.0.15.9159
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.0.67f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.0.67f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.0.67f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56352
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.67f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003134 seconds.
+- Loaded All Assemblies, in  0.365 seconds
+Native extension for WindowsStandalone target not found
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.17.4+4293ba1
+  Session Id:              accba92e55504355b7431decc2a010b2
+  Correlation Id:          ba0c8d8dee54c94497594211b3e1c850
+  External correlation Id: 4034118787432149227
+  Machine Id:              iKYgS4kAimEDohcKpwirl0IV0Uk=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-Marcu" (connect: 0.00s, validation: 0.00s, handshake: 0.83s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Marcu-notifications" at "2026-02-13T00:14:17.5583895Z"
+[Licensing::Module] Licensing Background thread has ended after 0.84s
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.282 seconds
+Domain Reload Profiling: 645ms
+	BeginReloadAssembly (128ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (36ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (47ms)
+	LoadAllAssembliesAndSetupDomain (141ms)
+		LoadAssemblies (125ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (138ms)
+			TypeCache.Refresh (137ms)
+				TypeCache.ScanAssembly (125ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (283ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (252ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (25ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (54ms)
+			ProcessInitializeOnLoadAttributes (125ms)
+			ProcessInitializeOnLoadMethodAttributes (44ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 3574291490911-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+- Loaded All Assemblies, in  0.738 seconds
+Refreshing native plugins compatible for Editor in 2.83 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Package Manager log level set to [2]
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.822 seconds
+Domain Reload Profiling: 1553ms
+	BeginReloadAssembly (166ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (30ms)
+	RebuildCommonClasses (29ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (35ms)
+	LoadAllAssembliesAndSetupDomain (491ms)
+		LoadAssemblies (331ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (247ms)
+			TypeCache.Refresh (165ms)
+				TypeCache.ScanAssembly (152ms)
+			BuildScriptInfoCaches (69ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (822ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (696ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (127ms)
+			ProcessInitializeOnLoadAttributes (460ms)
+			ProcessInitializeOnLoadMethodAttributes (97ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Refreshing native plugins compatible for Editor in 3.13 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6770 unused Assets / (4.2 MB). Loaded Objects now: 7491.
+Memory consumption went from 141.4 MB to 137.2 MB.
+Total: 7.816800 ms (FindLiveObjects: 0.659000 ms CreateObjectMapping: 0.537500 ms MarkObjects: 4.803200 ms  DeleteObjects: 1.816400 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 32923.323959 seconds.
+  path: Assets/Prefabs/Player.prefab
+  artifactKey: Guid(b71987c1c5531f240b519f5ee173f642) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player.prefab using Guid(b71987c1c5531f240b519f5ee173f642) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a7a8713c03428040ff6c5dc9948f546a') in 0.3617679 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 29
+
+========================================================================
+Received Import Request.
+  Time since last request: 2312.978213 seconds.
+  path: Assets/Custom Tiles/Brick Wall.png
+  artifactKey: Guid(50b6d8fe640bb62409c102bfc9709095) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Custom Tiles/Brick Wall.png using Guid(50b6d8fe640bb62409c102bfc9709095) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7f5b89f34ed03c4addd7ee8c2e8fd0ea') in 0.0426707 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Custom Tiles/Receptile Carpet D.png
+  artifactKey: Guid(24ed85ce2112e5f4aaa4049fcd2b9875) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Custom Tiles/Receptile Carpet D.png using Guid(24ed85ce2112e5f4aaa4049fcd2b9875) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '41a338ec7be60a3a66a53040189e310c') in 0.0146686 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Custom Tiles/Parking Lot Carpet V.png
+  artifactKey: Guid(f171e99a2da6ec14b92e853150ca84f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Custom Tiles/Parking Lot Carpet V.png using Guid(f171e99a2da6ec14b92e853150ca84f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '615b962c4381bcd71d7cb6b5b8a228a5') in 0.0142572 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Custom Tiles/Reception Carpet V.png
+  artifactKey: Guid(137f75272efa9ac41a60eee6339ec407) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Custom Tiles/Reception Carpet V.png using Guid(137f75272efa9ac41a60eee6339ec407) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ac0f75f4c934418ca15e96456089c238') in 0.0144996 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.388008 seconds.
+  path: Assets/Custom Tiles/Brick Wall.png
+  artifactKey: Guid(50b6d8fe640bb62409c102bfc9709095) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Custom Tiles/Brick Wall.png using Guid(50b6d8fe640bb62409c102bfc9709095) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a718c6cf9479dbb0405584e3eb59aa91') in 0.018419 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Custom Tiles/Parking Lot Carpet V.png
+  artifactKey: Guid(f171e99a2da6ec14b92e853150ca84f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Custom Tiles/Parking Lot Carpet V.png using Guid(f171e99a2da6ec14b92e853150ca84f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '59abe610f4ad1f12f21f7420969edd80') in 0.0058982 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.716922 seconds.
+  path: Assets/Custom Tiles/Reception Carpet V.png
+  artifactKey: Guid(137f75272efa9ac41a60eee6339ec407) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Custom Tiles/Reception Carpet V.png using Guid(137f75272efa9ac41a60eee6339ec407) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '73daf9f76ca9abed1a304c9421d07417') in 0.0080025 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.080617 seconds.
+  path: Assets/Custom Tiles/Reception Palette.prefab
+  artifactKey: Guid(ce390ecb091a2444d9277e4d1c6107c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Custom Tiles/Reception Palette.prefab using Guid(ce390ecb091a2444d9277e4d1c6107c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0c7a5d4cb378bc57c67f3b400a73af32') in 0.0190865 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 25
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.222426 seconds.
+  path: Assets/Custom Tiles/Reception Palette.prefab
+  artifactKey: Guid(ce390ecb091a2444d9277e4d1c6107c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Custom Tiles/Reception Palette.prefab using Guid(ce390ecb091a2444d9277e4d1c6107c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd630d9f7c9287036024d5d0f43fd261d') in 0.0170376 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 28
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.537984 seconds.
+  path: Assets/Custom Tiles/Reception Palette.prefab
+  artifactKey: Guid(ce390ecb091a2444d9277e4d1c6107c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Custom Tiles/Reception Palette.prefab using Guid(ce390ecb091a2444d9277e4d1c6107c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4e63ae00dbdad1756b6c08b397db06a6') in 0.018036 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 31
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.391441 seconds.
+  path: Assets/Custom Tiles/Parking Lot Palette.prefab
+  artifactKey: Guid(1b579992ddd768a4e92b1d29dff83819) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Custom Tiles/Parking Lot Palette.prefab using Guid(1b579992ddd768a4e92b1d29dff83819) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd361297b857e6bf8b40456df0245f10e') in 0.048762 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 67
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.597222 seconds.
+  path: Assets/Custom Tiles/Parking Lot Palette.prefab
+  artifactKey: Guid(1b579992ddd768a4e92b1d29dff83819) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Custom Tiles/Parking Lot Palette.prefab using Guid(1b579992ddd768a4e92b1d29dff83819) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd3ded45b8ed41a0578139848c57e7f2e') in 0.0466622 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 70
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.845789 seconds.
+  path: Assets/Custom Tiles/Parking Lot Palette.prefab
+  artifactKey: Guid(1b579992ddd768a4e92b1d29dff83819) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Custom Tiles/Parking Lot Palette.prefab using Guid(1b579992ddd768a4e92b1d29dff83819) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '048c8759a7c3c63b93d362c178549fa4') in 0.0251348 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 73
+
+========================================================================
+Received Import Request.
+  Time since last request: 79.610849 seconds.
+  path: Assets/Custom Tiles/Walls.prefab
+  artifactKey: Guid(83ad515daa15cc14cb23a507769b17f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Custom Tiles/Walls.prefab using Guid(83ad515daa15cc14cb23a507769b17f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'da4c64c53aaf400ea59067c048186fbc') in 0.0470778 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 345.302427 seconds.
+  path: Assets/Custom Tiles/Square.asset
+  artifactKey: Guid(0449ee9b659433643adf78bb60d9630c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Custom Tiles/Square.asset using Guid(0449ee9b659433643adf78bb60d9630c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e4fc060f0b5135884cf4f90375784a2a') in 0.0196158 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 355.293329 seconds.
+  path: Assets/Prefabs/Traps/ConveyerBelt.prefab
+  artifactKey: Guid(466d7a95ae222fd4ea2c739f75a562f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Traps/ConveyerBelt.prefab using Guid(466d7a95ae222fd4ea2c739f75a562f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5022602444b5c0eab11c44fe52d2c3f2') in 0.0036289 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Prefabs/Traps/FlamethrowerTrap.prefab
+  artifactKey: Guid(b5e86772902c66c4ab57b7cfba32acf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Traps/FlamethrowerTrap.prefab using Guid(b5e86772902c66c4ab57b7cfba32acf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0e7d740b9c880f512518e9c67dd05090') in 0.0030391 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
+
+========================================================================
+Received Import Request.
+  Time since last request: 2457.254262 seconds.
+  path: Assets/Custom Tiles/Beige Carpet Vertical.png
+  artifactKey: Guid(37e15c3baa1ef184bb6826b1991054c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Custom Tiles/Beige Carpet Vertical.png using Guid(37e15c3baa1ef184bb6826b1991054c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '78baf23d0d21a0883542833186a08869') in 0.0314351 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Custom Tiles/Grey Carpet Horizontal.png
+  artifactKey: Guid(b614c003f1af240489082ec143394c2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Custom Tiles/Grey Carpet Horizontal.png using Guid(b614c003f1af240489082ec143394c2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '34aa2d15677b1cb03b5437cfbfded089') in 0.0146291 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Custom Tiles/Green Carpet Horizontal.png
+  artifactKey: Guid(38ad4f9088da14e49b8377140d66e5d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Custom Tiles/Green Carpet Horizontal.png using Guid(38ad4f9088da14e49b8377140d66e5d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6d76161932b6bcb75f0c94c76956d703') in 0.0139881 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Custom Tiles/Green Carpet Vertical.png
+  artifactKey: Guid(632fbfae9cebb4e44b9ae8bbd67ac387) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Custom Tiles/Green Carpet Vertical.png using Guid(632fbfae9cebb4e44b9ae8bbd67ac387) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b8d1039a4d650c95cc80207baeb8e1d7') in 0.0165621 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.679982 seconds.
+  path: Assets/Custom Tiles/Beige Carpet Vertical.png
+  artifactKey: Guid(37e15c3baa1ef184bb6826b1991054c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Custom Tiles/Beige Carpet Vertical.png using Guid(37e15c3baa1ef184bb6826b1991054c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '08b99175c6bb9717c2a3d0059dded802') in 0.022719 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Custom Tiles/Grey Carpet Horizontal.png
+  artifactKey: Guid(b614c003f1af240489082ec143394c2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Custom Tiles/Grey Carpet Horizontal.png using Guid(b614c003f1af240489082ec143394c2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6ec11039f4bcbf7cd6f49885757f27b4') in 0.0300865 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Custom Tiles/Green Carpet Vertical.png
+  artifactKey: Guid(632fbfae9cebb4e44b9ae8bbd67ac387) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Custom Tiles/Green Carpet Vertical.png using Guid(632fbfae9cebb4e44b9ae8bbd67ac387) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '721abbd872d66a088d290910e52c412d') in 0.0082567 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 29.330918 seconds.
+  path: Assets/Custom Tiles/Office.prefab
+  artifactKey: Guid(5de5a7937f548be4b9cdda78a532ba07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Custom Tiles/Office.prefab using Guid(5de5a7937f548be4b9cdda78a532ba07) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a22467490736cfbf477562e02ab2b255') in 0.0147287 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.204419 seconds.
+  path: Assets/Custom Tiles/Office.prefab
+  artifactKey: Guid(5de5a7937f548be4b9cdda78a532ba07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Custom Tiles/Office.prefab using Guid(5de5a7937f548be4b9cdda78a532ba07) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '51fb7ac37a59598b161667050b28acc1') in 0.0161451 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 16
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.531467 seconds.
+  path: Assets/Custom Tiles/Office.prefab
+  artifactKey: Guid(5de5a7937f548be4b9cdda78a532ba07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Custom Tiles/Office.prefab using Guid(5de5a7937f548be4b9cdda78a532ba07) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4ff5bd841d3bcc38ed54f00206d5e1b3') in 0.0143327 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 19
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.139767 seconds.
+  path: Assets/Custom Tiles/Office.prefab
+  artifactKey: Guid(5de5a7937f548be4b9cdda78a532ba07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Custom Tiles/Office.prefab using Guid(5de5a7937f548be4b9cdda78a532ba07) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '33edef23c6f01aae320e24c941a05787') in 0.0159884 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 22
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.524166 seconds.
+  path: Assets/Custom Tiles/Office.prefab
+  artifactKey: Guid(5de5a7937f548be4b9cdda78a532ba07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Custom Tiles/Office.prefab using Guid(5de5a7937f548be4b9cdda78a532ba07) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3ec7359f72dbe5a0f711653b86348ba6') in 0.0166796 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 25
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.792705 seconds.
+  path: Assets/Custom Tiles/Office.prefab
+  artifactKey: Guid(5de5a7937f548be4b9cdda78a532ba07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Custom Tiles/Office.prefab using Guid(5de5a7937f548be4b9cdda78a532ba07) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9a8a8a607ff48360f8d244bbec14eed9') in 0.0155888 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 28
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.029856 seconds.
+  path: Assets/Custom Tiles/Office.prefab
+  artifactKey: Guid(5de5a7937f548be4b9cdda78a532ba07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Custom Tiles/Office.prefab using Guid(5de5a7937f548be4b9cdda78a532ba07) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b7b9e6280a27af7eb4e85eb52c6cb3b5') in 0.0187515 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 31
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.227651 seconds.
+  path: Assets/Custom Tiles/Office.prefab
+  artifactKey: Guid(5de5a7937f548be4b9cdda78a532ba07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Custom Tiles/Office.prefab using Guid(5de5a7937f548be4b9cdda78a532ba07) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ed5d43fda797acce7656deb897c3965f') in 0.024975 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 34
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+- Loaded All Assemblies, in  0.563 seconds
+Refreshing native plugins compatible for Editor in 0.54 ms, found 0 plugins.
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.300 seconds
+Domain Reload Profiling: 861ms
+	BeginReloadAssembly (346ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (55ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (104ms)
+	RebuildCommonClasses (44ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (28ms)
+	LoadAllAssembliesAndSetupDomain (128ms)
+		LoadAssemblies (195ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (28ms)
+			TypeCache.Refresh (13ms)
+				TypeCache.ScanAssembly (2ms)
+			BuildScriptInfoCaches (13ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (300ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (220ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (105ms)
+			ProcessInitializeOnLoadAttributes (88ms)
+			ProcessInitializeOnLoadMethodAttributes (16ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+Refreshing native plugins compatible for Editor in 0.37 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 199 unused Assets / (11.4 MB). Loaded Objects now: 731.
+Memory consumption went from 111.5 MB to 100.1 MB.
+Total: 6.895700 ms (FindLiveObjects: 0.063900 ms CreateObjectMapping: 0.012200 ms MarkObjects: 4.036600 ms  DeleteObjects: 2.782200 ms)
+
+Prepare: number of updated asset objects reloaded= 113
+AssetImportWorkerClient::OnTransportError - code=10054 error=An existing connection was forcibly closed by the remote host.
