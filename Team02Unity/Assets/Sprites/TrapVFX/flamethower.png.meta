@@ -1,0 +1,845 @@
+fileFormatVersion: 2
+guid: dd459f9905d8e794b8e3b28f2f2e3dbd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2315228823242185982
+    second: flamethower_0
+  - first:
+      213: -1575110259322257878
+    second: flamethower_1
+  - first:
+      213: -8427045144995447574
+    second: flamethower_2
+  - first:
+      213: 5299573631734741254
+    second: flamethower_3
+  - first:
+      213: -681267240751456399
+    second: flamethower_4
+  - first:
+      213: -698052939329149356
+    second: flamethower_5
+  - first:
+      213: 8178319473791224301
+    second: flamethower_6
+  - first:
+      213: -4912020656650886133
+    second: flamethower_7
+  - first:
+      213: -7668237050874411825
+    second: flamethower_8
+  - first:
+      213: -3178276270853506652
+    second: flamethower_9
+  - first:
+      213: 6517276616204472131
+    second: flamethower_10
+  - first:
+      213: -5060177860025094345
+    second: flamethower_11
+  - first:
+      213: 4735582294335901968
+    second: flamethower_12
+  - first:
+      213: -1773132795733333993
+    second: flamethower_13
+  - first:
+      213: 3375036376879852894
+    second: flamethower_14
+  - first:
+      213: -1900339012005178313
+    second: flamethower_15
+  - first:
+      213: 1836761634864106900
+    second: flamethower_16
+  - first:
+      213: -3607966364899818036
+    second: flamethower_17
+  - first:
+      213: -7181049785857100136
+    second: flamethower_18
+  - first:
+      213: -1069929702781234646
+    second: flamethower_19
+  - first:
+      213: 3213333359869519294
+    second: flamethower_20
+  - first:
+      213: -1320261353735507471
+    second: flamethower_21
+  - first:
+      213: 7143113325148006243
+    second: flamethower_22
+  - first:
+      213: 920770621983110623
+    second: flamethower_23
+  - first:
+      213: -770918011874315168
+    second: flamethower_24
+  - first:
+      213: 7098112018195716770
+    second: flamethower_25
+  - first:
+      213: 3234551063282805405
+    second: flamethower_26
+  - first:
+      213: -8147290499775939225
+    second: flamethower_27
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: flamethower_0
+      rect:
+        serializedVersion: 2
+        x: 2337
+        y: 7568
+        width: 956
+        height: 424
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20367e0e6a7aedfd0800000000000000
+      internalID: -2315228823242185982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flamethower_1
+      rect:
+        serializedVersion: 2
+        x: 3639
+        y: 7923
+        width: 38
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2ef50f7095142ae0800000000000000
+      internalID: -1575110259322257878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flamethower_2
+      rect:
+        serializedVersion: 2
+        x: 5141
+        y: 7934
+        width: 78
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aecbd5ac61f1d0b80800000000000000
+      internalID: -8427045144995447574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flamethower_3
+      rect:
+        serializedVersion: 2
+        x: 5150
+        y: 7617
+        width: 755
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6097394c32edb8940800000000000000
+      internalID: 5299573631734741254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flamethower_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7672
+        width: 486
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17f16e5dd07ab86f0800000000000000
+      internalID: -681267240751456399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flamethower_5
+      rect:
+        serializedVersion: 2
+        x: 4675
+        y: 7672
+        width: 487
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4566ed4dc840056f0800000000000000
+      internalID: -698052939329149356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flamethower_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6846
+        width: 486
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de94cf61b3a3f7170800000000000000
+      internalID: 8178319473791224301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flamethower_7
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 6750
+        width: 960
+        height: 424
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0461fedc3ff4dbb0800000000000000
+      internalID: -4912020656650886133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flamethower_8
+      rect:
+        serializedVersion: 2
+        x: 2337
+        y: 6846
+        width: 487
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc44421c703f49590800000000000000
+      internalID: -7668237050874411825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flamethower_9
+      rect:
+        serializedVersion: 2
+        x: 2877
+        y: 6646
+        width: 1098
+        height: 581
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a939b5229e74e3d0800000000000000
+      internalID: -3178276270853506652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flamethower_10
+      rect:
+        serializedVersion: 2
+        x: 4675
+        y: 6846
+        width: 487
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34fc3db6d84027a50800000000000000
+      internalID: 6517276616204472131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flamethower_11
+      rect:
+        serializedVersion: 2
+        x: 5236
+        y: 6679
+        width: 1151
+        height: 554
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73f68e8db03a6c9b0800000000000000
+      internalID: -5060177860025094345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flamethower_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6020
+        width: 486
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 011558aa10b28b140800000000000000
+      internalID: 4735582294335901968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flamethower_13
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 5741
+        width: 1142
+        height: 625
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71828b2ed119467e0800000000000000
+      internalID: -1773132795733333993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flamethower_14
+      rect:
+        serializedVersion: 2
+        x: 2337
+        y: 6020
+        width: 487
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5de1fbf3b986de20800000000000000
+      internalID: 3375036376879852894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flamethower_15
+      rect:
+        serializedVersion: 2
+        x: 2923
+        y: 5720
+        width: 1287
+        height: 741
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7345d9cacb3a0a5e0800000000000000
+      internalID: -1900339012005178313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flamethower_16
+      rect:
+        serializedVersion: 2
+        x: 4675
+        y: 6020
+        width: 487
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49d042fa9fc7d7910800000000000000
+      internalID: 1836761634864106900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flamethower_17
+      rect:
+        serializedVersion: 2
+        x: 5226
+        y: 5803
+        width: 1437
+        height: 737
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc5c69af4bdededc0800000000000000
+      internalID: -3607966364899818036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flamethower_18
+      rect:
+        serializedVersion: 2
+        x: 5250
+        y: 5233
+        width: 1584
+        height: 374
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 896b79f3449c75c90800000000000000
+      internalID: -7181049785857100136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flamethower_19
+      rect:
+        serializedVersion: 2
+        x: 6068
+        y: 5604
+        width: 182
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a22d513aa98d621f0800000000000000
+      internalID: -1069929702781234646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flamethower_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5194
+        width: 486
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb56fe37aad089c20800000000000000
+      internalID: 3213333359869519294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flamethower_21
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 5043
+        width: 1787
+        height: 546
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f13be73b4d7dade0800000000000000
+      internalID: -1320261353735507471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flamethower_22
+      rect:
+        serializedVersion: 2
+        x: 2337
+        y: 5194
+        width: 487
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3676ecf29bf612360800000000000000
+      internalID: 7143113325148006243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flamethower_23
+      rect:
+        serializedVersion: 2
+        x: 2905
+        y: 5178
+        width: 1757
+        height: 424
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd53be2900c37cc00800000000000000
+      internalID: 920770621983110623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flamethower_24
+      rect:
+        serializedVersion: 2
+        x: 4675
+        y: 5194
+        width: 487
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 064f74717262d45f0800000000000000
+      internalID: -770918011874315168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flamethower_25
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 4407
+        width: 1584
+        height: 374
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2aa9c7ce54f818260800000000000000
+      internalID: 7098112018195716770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flamethower_26
+      rect:
+        serializedVersion: 2
+        x: 1392
+        y: 4778
+        width: 182
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9a65defd0f63ec20800000000000000
+      internalID: 3234551063282805405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flamethower_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4368
+        width: 486
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76db0f6e4720fee80800000000000000
+      internalID: -8147290499775939225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      flamethower_0: -2315228823242185982
+      flamethower_1: -1575110259322257878
+      flamethower_10: 6517276616204472131
+      flamethower_11: -5060177860025094345
+      flamethower_12: 4735582294335901968
+      flamethower_13: -1773132795733333993
+      flamethower_14: 3375036376879852894
+      flamethower_15: -1900339012005178313
+      flamethower_16: 1836761634864106900
+      flamethower_17: -3607966364899818036
+      flamethower_18: -7181049785857100136
+      flamethower_19: -1069929702781234646
+      flamethower_2: -8427045144995447574
+      flamethower_20: 3213333359869519294
+      flamethower_21: -1320261353735507471
+      flamethower_22: 7143113325148006243
+      flamethower_23: 920770621983110623
+      flamethower_24: -770918011874315168
+      flamethower_25: 7098112018195716770
+      flamethower_26: 3234551063282805405
+      flamethower_27: -8147290499775939225
+      flamethower_3: 5299573631734741254
+      flamethower_4: -681267240751456399
+      flamethower_5: -698052939329149356
+      flamethower_6: 8178319473791224301
+      flamethower_7: -4912020656650886133
+      flamethower_8: -7668237050874411825
+      flamethower_9: -3178276270853506652
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
