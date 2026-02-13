@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: horizontal crosswalk tile_0
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: -5730121599591694580, guid: 33bc64d212556d248b49b10ccc9eddf0, type: 3}
+  m_Sprite: {fileID: -5730121599591694580, guid: bafa6e5dcfd65a64d936715f1c2d8fba, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1

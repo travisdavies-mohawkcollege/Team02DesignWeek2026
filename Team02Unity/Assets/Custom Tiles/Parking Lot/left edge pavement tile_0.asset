@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: left edge pavement tile_0
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: -166225197710710743, guid: 3e9f2ad01156f574394d11ab548a3c88, type: 3}
+  m_Sprite: {fileID: -166225197710710743, guid: a5713aa08ee7e634f9fe91f387222ab5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1

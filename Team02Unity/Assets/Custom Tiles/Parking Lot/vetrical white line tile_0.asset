@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: vetrical white line tile_0
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: -6611091421310878981, guid: 9c9f3c0f72c8f0646a82b3c98e1a5f08, type: 3}
+  m_Sprite: {fileID: -6611091421310878981, guid: 7cf8695e49d76c9468207f5113cab673, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
