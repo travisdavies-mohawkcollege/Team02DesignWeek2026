@@ -84,6 +84,8 @@ public class GameManager : MonoBehaviour
             if (currentRoom == 6)
             {
                 p1Cam.transform.position = newCamPos;
+                display1Text.enabled = false;
+                display1TextBox.enabled = false;
                 display2Text.enabled = false;
                 display2TextBox.enabled = false;
                 monitorDisplay.enabled = false;
