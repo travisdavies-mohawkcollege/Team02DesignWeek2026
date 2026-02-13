@@ -236,23 +236,23 @@ MonoBehaviour:
   player2Points:
   - roomStartPos: {x: 23.369995, y: -7.3200073, z: 0}
   - roomStartPos: {x: 23.92, y: 16.56, z: 0}
-  - roomStartPos: {x: 23.48, y: 39.5, z: 0}
+  - roomStartPos: {x: 26.66, y: 38.73, z: 0}
   player3Points:
   - roomStartPos: {x: 0, y: 0, z: 0}
   - roomStartPos: {x: 26.41, y: 16.56, z: 0}
-  - roomStartPos: {x: 26.42, y: 39.5, z: 0}
+  - roomStartPos: {x: 27.78, y: 38.73, z: 0}
   player4Points:
   - roomStartPos: {x: 0, y: 0, z: 0}
   - roomStartPos: {x: 28.55, y: 16.56, z: 0}
-  - roomStartPos: {x: 28.55, y: 39.5, z: 0}
+  - roomStartPos: {x: 29.25, y: 38.73, z: 0}
   player5Points:
   - roomStartPos: {x: 0, y: 0, z: 0}
   - roomStartPos: {x: 31.38, y: 16.56, z: 0}
-  - roomStartPos: {x: 31.48, y: 39.5, z: 0}
+  - roomStartPos: {x: 30.36, y: 38.73, z: 0}
   player6Points:
   - roomStartPos: {x: 0, y: 0, z: 0}
   - roomStartPos: {x: 33.61, y: 16.56, z: 0}
-  - roomStartPos: {x: 33.52, y: 39.5, z: 0}
+  - roomStartPos: {x: 28.49, y: 39.89, z: 0}
   doneRoom: 0
   maxSize: {x: 2, y: 2, z: 2}
   minSize: {x: 0.75, y: 0.75, z: 0.75}

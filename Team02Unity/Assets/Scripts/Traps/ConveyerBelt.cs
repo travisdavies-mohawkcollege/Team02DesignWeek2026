@@ -44,6 +44,7 @@ public class ConveyerBelt : MonoBehaviour
             Vector3Int cellPos = tilemap.WorldToCell(beltPos);
             GameObject belt = Instantiate(beltPrefab, tilemap.GetCellCenterWorld(cellPos), Quaternion.Euler(beltRot));
             activeBelts.Add(belt);
+            belt.transform.SetParent(this.transform, true);
         }
         trapperSwitch = FindFirstObjectByType<Switch>();  
     }
@@ -55,6 +56,23 @@ public class ConveyerBelt : MonoBehaviour
         foreach(GameObject belt in activeBelts)
         {
             belt.transform.Rotate(0, 0, 180);
+            }
+        switch (beltData.beltDirection)
+        {
+            case BeltDirection.up:
+                beltData.beltDirection = BeltDirection.down;
+                break;
+            case BeltDirection.down:
+                beltData.beltDirection = BeltDirection.up;
+                break;
+            case BeltDirection.left:
+                beltData.beltDirection = BeltDirection.right;
+                break;
+            case BeltDirection.right:
+                beltData.beltDirection = BeltDirection.left;
+                break;
+            default:
+                break;
         }
         isSwapped = true;
     }
@@ -65,8 +83,25 @@ public class ConveyerBelt : MonoBehaviour
         Debug.Log("RotatedBelts");
         foreach (GameObject belt in activeBelts)
         {
-            belt.transform.Rotate(0, 0, 180);
-        }      
+            belt.transform.Rotate(0, 0, 180);       
+        }
+        switch (beltData.beltDirection)
+        {
+            case BeltDirection.up:
+                beltData.beltDirection = BeltDirection.down;
+                break;
+            case BeltDirection.down:
+                beltData.beltDirection = BeltDirection.up;
+                break;
+            case BeltDirection.left:
+                beltData.beltDirection = BeltDirection.right;
+                break;
+            case BeltDirection.right:
+                beltData.beltDirection = BeltDirection.left;
+                break;
+            default:
+                break;
+        }
     }
 
     public Vector3 GetRot()

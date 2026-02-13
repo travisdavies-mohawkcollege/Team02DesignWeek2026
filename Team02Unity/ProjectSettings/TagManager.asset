@@ -13,6 +13,8 @@ TagManager:
   - Lever
   - Fire
   - DoneRoom
+  - Victory
+  - Lava
   layers:
   - Default
   - TransparentFX

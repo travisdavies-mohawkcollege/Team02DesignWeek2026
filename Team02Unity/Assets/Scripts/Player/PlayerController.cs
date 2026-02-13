@@ -363,6 +363,8 @@ public class PlayerController : MonoBehaviour
     public void GoToNextRoom(int roomNumber)
     {
         if (isTrapper) return;
+        Rigidbody2D.linearVelocity = Vector3.zero;
+        Rigidbody2D.angularVelocity = 0;
         Debug.Log("current room: " +roomNumber);
         switch (PlayerNumber)
         {
@@ -386,7 +388,7 @@ public class PlayerController : MonoBehaviour
                 break;
 
         }
-        canControl = true;
+        canControl = false;
         doneRoom = false;
         
     }
@@ -415,6 +417,10 @@ public class PlayerController : MonoBehaviour
             Rigidbody2D.linearVelocity = Vector3.zero;
             Rigidbody2D.angularVelocity = 0;
         }
+        else if (collider.gameObject.CompareTag("Victory"))
+        {
+            Debug.Log("Player " + this.PlayerNumber + " wins!");
+        }
     }
     public void OnTriggerStay2D(Collider2D collider)
     {
@@ -424,11 +430,11 @@ public class PlayerController : MonoBehaviour
             //Debug.Log("in conveyer belt");
             if (grounded)
             {
-                ConveyerBelt belt = FindFirstObjectByType<ConveyerBelt>();
+                ConveyerBelt belt = collider.transform.parent.gameObject.GetComponent<ConveyerBelt>();
                 if (belt != null)
                 {
                     Rigidbody2D.AddForce(belt.GetRot() * 5, ForceMode2D.Force);
-                    //Debug.Log(belt.GetRot());
+                    Debug.Log(belt.GetRot());
                     //Debug.Log("Adding force!");
                 }
                 else
@@ -445,6 +451,17 @@ public class PlayerController : MonoBehaviour
             if (grounded)
             {
                 if(collider.bounds.Contains(this.GetComponent<Collider2D>().bounds.center))
+                {
+                    RunnerDie();
+                }
+
+            }
+        }
+        if (collider.gameObject.CompareTag("Lava"))
+        {
+            if (grounded)
+            {
+                if (collider.bounds.Contains(this.GetComponent<Collider2D>().bounds.center))
                 {
                     RunnerDie();
                 }

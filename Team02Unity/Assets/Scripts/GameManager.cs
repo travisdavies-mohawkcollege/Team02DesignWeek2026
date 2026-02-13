@@ -16,6 +16,9 @@ public class GameManager : MonoBehaviour
     public CameraPoints cameraPoints;
     public List<PlayerController> donePlayers;
     public bool gameStarted = false;
+    public float roomStartTimerMax = 3f;
+    public float roomStartTimer = 3f;
+    public bool roomStart;
 
 
     public void Update()
@@ -27,6 +30,14 @@ public class GameManager : MonoBehaviour
                 break;
             case true:
                 NextRoom(currentRoom);
+                break;
+        }
+        switch(roomStart)
+        {
+            case true:
+                break;
+            case false:
+                NextRoomTimer();
                 break;
         }
     }
@@ -49,6 +60,7 @@ public class GameManager : MonoBehaviour
         Vector3 newCamPos = cameraPoints.GetCameraPos(currentRoom);
         roomCam.transform.position = newCamPos;
         texCam.transform.position = newCamPos;
+        roomStart = false;
     }
 
     public bool AllPlayersDone()
@@ -70,6 +82,23 @@ public class GameManager : MonoBehaviour
         {
             donePlayers.Clear();
             return false;
+        }
+    }
+
+    public void NextRoomTimer()
+    {
+        if(!roomStart)
+        {
+            roomStartTimer -= Time.deltaTime;
+        }
+        if(roomStartTimer < 0)
+        {
+            roomStart = true;
+            roomStartTimer = 3f;
+            foreach (PlayerController playerController in playerControllers)
+            {
+                playerController.canControl = true;
+            }
         }
     }
 }
