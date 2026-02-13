@@ -7,17 +7,26 @@ public class Car : MonoBehaviour
     public bool directionSet;
     public CarDirection direction;
     public Vector2 directionVector;
-    public float speed = 5;
+    public float speed = 3;
+    public float timerMax = 3f;
+    public float timer = 1f;
+
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        timer = 3f;
     }
 
     void Update()
     {
         if (!directionSet) return;
-        rb.AddForce(directionVector * speed, ForceMode2D.Force);
+        rb.AddForce(directionVector * speed, ForceMode2D.Impulse);
+        timer -= Time.deltaTime;
+        if (timer < timerMax)
+        {
+            Destroy(this.gameObject);
+        }
     }
 
     public void SetDirection(CarDirection _direction)

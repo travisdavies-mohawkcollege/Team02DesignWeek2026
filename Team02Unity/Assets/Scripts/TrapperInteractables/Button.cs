@@ -1,5 +1,5 @@
 using JetBrains.Annotations;
-using NUnit.Framework;
+//using NUnit.Framework;
 using UnityEngine;
 using System;
 using System.Collections.Generic;
@@ -15,7 +15,6 @@ public class Button : MonoBehaviour
     //Traps
     //0 for start game. 
     public int activeTrap = 0;
-    public List pitTrap;
     public void Start()
     {
         SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();

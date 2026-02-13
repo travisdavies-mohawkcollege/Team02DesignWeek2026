@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Lights : MonoBehaviour
 {
-    public GameObject darkness;
+    public GameObject[] darkness;
     public Lever lever;
     public bool lightsOff = false;
     public float timerMax = 3f;
@@ -11,18 +11,27 @@ public class Lights : MonoBehaviour
     {
         lever = FindFirstObjectByType<Lever>();
         lever.lights.Add(this);
-        darkness.SetActive(false);
+        foreach(GameObject gameObject in darkness)
+        {
+            gameObject.SetActive(false);
+        }
     }
 
     public void TurnOffLights()
     {
-        darkness.SetActive(true);
+        foreach (GameObject gameObject in darkness)
+        {
+            gameObject.SetActive(true);
+        }
         lightsOff = true;
     }
 
     public void TurnOnLights()
     {
-        darkness.SetActive(false);
+        foreach(GameObject gameObject in darkness)
+        {
+            gameObject.SetActive(false);
+        }
         lightsOff = false;
     }
 

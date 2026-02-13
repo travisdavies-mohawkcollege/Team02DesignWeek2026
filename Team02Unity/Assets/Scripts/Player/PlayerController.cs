@@ -1,6 +1,6 @@
 using JetBrains.Annotations;
 using System.Collections;
-using UnityEditor.Experimental.GraphView;
+//using System.Drawing;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UIElements;
@@ -30,6 +30,7 @@ public class PlayerController : MonoBehaviour
     public GameManager gameManager;
 
     public PlayPointData[] player2Points, player3Points, player4Points, player5Points, player6Points;
+    public int score;
 
     // Player input information
     private PlayerInput PlayerInput;
@@ -38,6 +39,7 @@ public class PlayerController : MonoBehaviour
     private InputAction InputActionStartGame;
 
     //Jump Test
+    public bool canJump = true;
     public bool jumping { get; private set; }
     public bool falling { get; private set; }
     public bool grounded { get; private set; } = true;
@@ -48,10 +50,23 @@ public class PlayerController : MonoBehaviour
     //Temp
     public PitTrap pitTrapTest;
 
+    //Audio
+    public AudioSource sfxSource;
+    public AudioClip jumpSFX;
+    public AudioClip thudSFX;
+    public AudioClip powerUpSfx;
+    public AudioClip powerDownSfx;
+    public AudioClip deathSfx;
+    public AudioClip buttonSfx;
+    public AudioClip leverSfx;
+    public bool hasPlayed;
+
+
+
     //Timers
     //Button
-    public float buttonCooldown = 20f;
-    public float buttonTimer = 20f;
+    public float buttonCooldown = 3f;
+    public float buttonTimer = 3f;
     public bool buttonOnCooldown = false;
     //Switch
     public float switchCooldown;
@@ -66,6 +81,9 @@ public class PlayerController : MonoBehaviour
     {
         gameManager = FindFirstObjectByType<GameManager>();
         gameManager.playerControllers.Add(this);
+        score = 0;
+        hasPlayed = true;
+        canJump = true;
     }
 
     // Assign color value on spawn from main spawner
@@ -142,12 +160,14 @@ public class PlayerController : MonoBehaviour
                 break;
             case false:
                 // Read the "Jump" action state, which is a boolean value
-                if (InputActionJump.WasPressedThisFrame() && !jumping)
+                if (InputActionJump.WasPressedThisFrame() && canJump)
                 {
                     // Buffer input becuase I'm controlling the Rigidbody through FixedUpdate
                     // and checking there we can miss inputs.
                     DoJump = true;
                     jumping = true;
+                    canJump = false;
+                    sfxSource.PlayOneShot(jumpSFX);
                 }
                 break;
         } 
@@ -181,7 +201,7 @@ public class PlayerController : MonoBehaviour
     {
         // JUMP - review Update()
         if (DoJump)
-        {
+        {           
             if (jumping)
             {
                 grounded = false;
@@ -204,6 +224,7 @@ public class PlayerController : MonoBehaviour
             {
                 DoJump = false;
                 grounded = true;
+                canJump = true;
             }
         }
     }
@@ -261,8 +282,9 @@ public class PlayerController : MonoBehaviour
                     this.SpriteRenderer.enabled = false;
                     buttonAnim.SetBool("pressingButton", true);
                     trapperInteract = false;
-                    buttonTimer = 6f;
+                    buttonTimer = 3f;
                     canControl = false;
+                    sfxSource.PlayOneShot(buttonSfx);
                     //buttonOnCooldown = true;
                 }
                     
@@ -283,6 +305,7 @@ public class PlayerController : MonoBehaviour
                     trapperInteract = false;
                     switchTimer = 6f;
                     canControl = false;
+                    sfxSource.PlayOneShot(leverSfx);
                 }
             }
             else if (hit.collider.gameObject.CompareTag("Lever"))
@@ -297,8 +320,10 @@ public class PlayerController : MonoBehaviour
                     this.SpriteRenderer.enabled = false;
                     leverAnim.SetBool("pullingLever", true);
                     trapperInteract = false;
-                    leverTimer = 5f;
+                    leverTimer = 3f;
                     canControl = false;
+                    hasPlayed = false;
+                    sfxSource.PlayOneShot(powerDownSfx);
                 }
             }
             else
@@ -353,6 +378,11 @@ public class PlayerController : MonoBehaviour
         {
             leverTimer = leverCooldown;
             leverOnCooldown = false;
+            if(!hasPlayed)
+            {
+                sfxSource.PlayOneShot(powerUpSfx);
+                hasPlayed= true;
+            }
         }
         if (leverOnCooldown)
         {
@@ -400,6 +430,7 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.CompareTag("Car"))
         {
             RunnerDie();
+            sfxSource.PlayOneShot(thudSFX);
         }
        
     }
@@ -409,6 +440,8 @@ public class PlayerController : MonoBehaviour
         if (collider.gameObject.CompareTag("Fire"))
         {
             RunnerDie();
+            sfxSource.PlayOneShot(deathSfx);
+
         }
         else if (collider.gameObject.CompareTag("DoneRoom"))
         {
@@ -416,6 +449,15 @@ public class PlayerController : MonoBehaviour
             doneRoom = true;
             Rigidbody2D.linearVelocity = Vector3.zero;
             Rigidbody2D.angularVelocity = 0;
+            Rigidbody2D.transform.position = Vector3.zero;
+            if(collider.gameObject.GetComponent<EndRoomBox>().first == true)
+            {
+                score += 3;
+            }
+            else
+            {
+                score += 1;
+            }
         }
         else if (collider.gameObject.CompareTag("Victory"))
         {
@@ -453,6 +495,7 @@ public class PlayerController : MonoBehaviour
                 if(collider.bounds.Contains(this.GetComponent<Collider2D>().bounds.center))
                 {
                     RunnerDie();
+                    sfxSource.PlayOneShot(deathSfx);
                 }
 
             }
@@ -464,6 +507,7 @@ public class PlayerController : MonoBehaviour
                 if (collider.bounds.Contains(this.GetComponent<Collider2D>().bounds.center))
                 {
                     RunnerDie();
+                    sfxSource.PlayOneShot(deathSfx);
                 }
 
             }
